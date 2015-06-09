@@ -1,0 +1,820 @@
+.indepth_share{
+		display: none;
+		position: fixed;
+		right: 3px;
+		bottom: 8px;
+		z-index: 200;
+		
+	}
+	
+	.indepth_share_item{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.4);
+		float: left;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: auto 20px ;
+		margin-left: 7px;
+		cursor: pointer;
+	}
+	
+	.indepth_share_item.facebook{
+		background-image: url(../images/boton_facebook.png);
+	}
+	
+	.indepth_share_item.facebook:hover{
+		background-color: #3660A4;
+	}
+	
+	.indepth_share_item.twitter{
+		background-image: url(../images/boton_twitter.png);
+	}
+	
+	.indepth_share_item.twitter:hover{
+		background-color: #02B2F7;
+	}
+	
+	
+	.indepth_share_item.whatsapp{
+		background-image: url(../images/boton_whatsapp.png);
+		display: none;
+	}
+	
+	.indepth_share_item.whatsapp:hover{
+		background-color: #85D86D;
+	}
+	
+	
+	#com{
+		width: 90%;
+		margin: auto;
+	}
+	#indepth_menu{
+		display: table;
+		position: fixed;
+		z-index: 200;
+		width: 40px;
+		margin: auto;
+		top:0px;
+		margin-left: 30px;
+	}
+	
+	.indepth_menu_cont{
+		display: table;
+		margin: auto;
+		width: 100%;
+	}
+	
+	.indepth_menu_item{
+		width: 100%;
+		height: 40px;
+		margin: 5px auto;
+		background-position: center center;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		opacity: .50;
+		cursor: pointer;
+	}
+	
+	.indepth_menu_item:first-child{
+		margin-left: 0px;
+	}
+	
+	.indepth_menu_item:hover{
+
+		opacity: .8;
+	}
+	
+	.indepth_menu_item.active{
+		opacity: 1;
+	}
+	
+
+	
+	
+	
+
+#indepth_button_ver{
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/IMG_scroll.png);
+	margin: auto;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.indepth_button_cont{
+	width: 100%;
+	position: absolute;
+	bottom: 80px;
+}
+
+.indepth_pages{
+	width: 100%;
+	min-width: 960px;
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	font-family: 'Roboto';
+	font-size: 19px;
+	margin: auto;
+}
+
+.indepth_page{
+	width: 100%;
+	min-width: 960px;
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	margin: auto;
+}
+
+.indepth_page_content{
+	background-color:  white;
+	position: relative;
+}
+
+#com{
+	background: white;
+}
+
+.indepth_page_body{
+	bottom: 0px;
+	left: 0px;
+	margin: 0 auto;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+	max-width: 800px;
+	width: 100%;
+}
+
+#indepth_cover{
+	background: #141414;
+}
+
+
+ 
+#indepth_cover .indepth_parallax_back{
+	background: url(../images/JC_1_Portada.jpg);
+	background-size: auto 100%;
+	background-position: center center;
+	background-attachment: fixed;	
+}
+
+.indepth_page_content .indepth_page_body{
+	position: relative;
+}
+
+.indepth_page_content .indepth_container{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+
+.indepth_marcas_circle_container{
+	width: 798px;
+	display: table;
+	margin: 50px auto;
+}
+
+.indepth_marcas_item{
+	float: left;
+	width: 133px;
+	display: table;
+}
+
+.indepth_marca_logo{
+	background: #000000;
+	border-radius: 50%;
+	width: 106px;
+	height: 106px;
+	margin: auto;
+}
+
+.indepth_marca_equipos_cont{
+	border-left: 1px solid #d4dadf;
+	
+}
+
+.indepth_marcas_item:first-child .indepth_marca_equipos_cont{
+	border-left: none;
+} 
+
+.indepth_marca_marcador{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Roboto';
+	margin: 15px auto;
+}
+
+.indepth_marca_equipos_item{
+	font-size: 16px;
+	padding-left: 12px;
+	font-weight: 400;
+}
+
+.indepth_marca_equipos_item span{
+	color: #a0a5a8;
+	font-style: italic;
+}
+
+.indepth_sub_img{
+	width: 100%;
+	display: table;
+	margin: 20px auto;
+}
+
+.indepth_sub_img img{
+	width: 100%;
+}
+
+.indepth_puntos_container{
+	width: 100%;
+	display: table;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+
+.indepth_puntos_item{
+	float: left;
+	width: 33.33%;
+	height: 62px;
+}
+
+.indepth_puntos_circulo{
+	display: table;
+	height: 100%;
+	margin-left: 12px;
+	float: left;
+}
+
+.indepth_puntos_circulo img{
+	height: 100%;
+}
+
+.indepth_puntos_texto{
+	font-size: 20px;
+	padding-left: 5px;
+	display: table;
+	height: 100%;
+}
+
+.indepth_puntos_texto div{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.indepth_goleadores_container{
+	width: 100%;
+	margin: 20px auto;
+	display: table;
+}
+
+.indepth_gol_img{
+	margin: 0 30px;
+	float: left;
+	width: 106px;
+}
+
+.indepth_gol_img:first-child{
+	margin-left: 15px;
+} 
+
+.indepth_gol_img:last-child{
+	margin-right: 15px;
+	
+}
+
+#indepth_footer{
+	background-color: #F8F8F8;
+	border-top: 1px solid #8A8A8A;
+	border-bottom: 1px solid #8A8A8A;
+	padding: 15px 0px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#indepth_footer .indepth_text{
+	font-size:17px;
+	color: #8A8A8A;
+	text-align:center;
+}
+
+#indepth_footer .indepth_page_body{
+	position: relative;
+}
+
+#indepth_footer .Copyright{
+		float: left;
+		text-align: center;
+		width: 100%;
+}
+
+.indepth_break{
+		height: 38px;
+}
+
+.indepth_break .indepth_page_body{
+	height: 100%;
+	background-size: 1920px auto;
+	top: 0px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+}
+
+
+.indepth_page_image{
+	background-position: center center;
+}
+
+
+
+
+
+
+.indepth_parallax_back {
+	height: 100%;
+	background-size: 1920px auto;
+	background-color: #000;
+	top: 0px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+
+/****DINAMICO****/
+
+
+#indepth_break_1 .indepth_parallax_back, #indepth_break_6 .indepth_parallax_back{
+	background-image: url(../images/JC_Transicion1.jpg);
+
+}
+
+#indepth_break_2 .indepth_parallax_back, #indepth_break_6 .indepth_parallax_back{
+	background-image: url(../images/JC_Transicion2.jpg);
+
+}
+
+#indepth_break_3 .indepth_parallax_back, #indepth_break_7 .indepth_parallax_back{
+	background-image: url(../images/JC_Transicion3.jpg);
+
+}
+
+#indepth_break_4 .indepth_parallax_back, #indepth_break_8 .indepth_parallax_back{
+	background-image: url(../images/JC_Transicion4.jpg);
+
+}
+
+#indepth_break_5 .indepth_parallax_back, #indepth_break_9 .indepth_parallax_back{
+	background-image: url(../images/JC_Transicion5.jpg);
+
+}
+
+
+
+/***** menu******/
+
+
+/* mobile adecuations */
+
+@media screen and (max-width: 1960px) {
+	
+}
+
+/*** Movil ****/
+@media screen and (max-width:1109px) {
+	.indepth_mapa_left{
+		max-width: 680px;
+	}
+}
+
+@media screen and (max-width:679px) {
+	.indepth_mapa_left{
+		max-width: 320px;
+		margin: 0px auto;
+		margin-bottom: 10px;
+	}
+	.indepth_box{
+		margin:  10px 0;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	body{
+		width: 100%;
+		min-width: 0px;
+	}
+
+
+	.indepth_docs, .indepth_docs_container{
+		width: 800px;
+		height: 443px;
+
+	}
+
+	.indepth_docs_container{
+		margin-left: 0px;
+	}
+	.indepth_docs_r{
+		width: 248px;
+	}
+
+	.indepth_docs_left{
+		width: 550px;
+
+	}
+
+	.indepth_docs_title{
+		font-size: 18px;
+	}
+
+	.indepth_docs_text{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+
+
+	
+	.indepth_pages{
+		width: 100%;
+		max-width: 800px;	
+		min-width: 0px;
+	}
+
+	.indepth_page{
+		width: 100%;
+		min-width: 0px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.indepth_page_body{
+		width:95%;
+		margin: 0 auto;
+	}
+	
+	#indepth_cover .indepth_titlle_container {
+		width: 100%;
+	}
+	
+	#indepth_cover .indepth_parallax_back{
+		background-size: auto 800px;
+		background-position: 50% 0;
+	}
+	
+	.indepth_page_infografia .indepth_page_body{
+		width: 100%;
+	}
+	
+	.indepth_break .indepth_page_body{
+		width: 100%;
+	}
+	#partidos{
+		width: 100%;
+	}
+	
+	.indepth_menu_item{
+		float: left;
+		width: 40px;
+		margin-right: 5px;
+		
+	}
+		
+	.indepth_menu_cont{
+		width: auto;
+		
+	}
+	
+	#indepth_menu{
+		width: 100%;
+		margin-left: 0px;
+		background: black;
+		padding: 5px 0;
+	}
+	
+
+
+	
+	#indepth_cover .indepth_parallax_back{
+		background-size: cover;
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+	}
+	
+
+	
+	.indepth_break .indepth_parallax_back .indepth_text_container{
+		padding: 0 10px;
+	}
+	
+	.indepth_infografia_container img{
+		width: 100%;
+	
+	}
+	
+
+
+
+
+}
+
+@media screen and (max-width: 750px) {
+	
+		.indepth_break{
+			display: none;
+		}
+		
+		.indepth_page_image{
+			background-size: 414px;
+			background-repeat: no-repeat;
+		}
+		
+		
+		#indepth_page1 {
+			background-image: url(../images/movil/JC_2_Chicharito.jpg);
+			height: 1402px;
+			background-color: #1462ce;
+		}
+		
+		#indepth_page2 {
+			background-image: url(../images/movil/JC_3_Jimenez.jpg);
+			height: 1236px;
+			background-color: #f2561a;
+		}
+		
+		#indepth_page3 {
+			background-image: url(../images/movil/JC_4_Pulido.jpg);
+			height: 1397.5px;
+			background-color: #e5b70f;
+		}
+		
+		#indepth_page4 {
+			background-image: url(../images/movil/JC_5_Messi.jpg);
+			height: 1330px;
+			background-color: #589e13;
+		}
+		
+		#indepth_page5 {
+			background-image: url(../images/movil/JC_6_Memo.jpg);
+			height: 1329.5px;
+			background-color: #be1551;
+		}
+		
+		#indepth_page6 {
+			background-image: url(../images/movil/JC_7_Ballo.jpg);
+			height: 1480px;
+			background-color: #1462ce;
+		}
+		
+		#indepth_page7 {
+			background-image: url(../images/movil/JC_8_Turco.jpg);
+			height: 1324.5px;
+			background-color: #f2561a;
+			
+		}
+		
+		#indepth_page8 {
+			background-image: url(../images/movil/JC_9_Chepo.jpg);
+			height: 1470.5px;
+			background-color: #e5b70f;
+		}
+		
+		#indepth_page9 {
+			background-image: url(../images/movil/JC_10_CR.jpg);
+			height: 1390px;
+			background-color: #589e13;
+		}
+		
+		#indepth_page10 {
+			background-image: url(../images/movil/JC_11_Rada.jpg);
+			height: 1326.5px;
+			background-color: #be1551;
+		}
+	
+}
+
+
+@media screen and (max-width: 605px) {
+	
+	
+	
+	#com{
+		width: 98%;
+		margin: auto;
+	}
+	
+	.indepth_docs_container{
+		width: 320px;
+		height: auto;
+		margin: auto;
+	}
+
+	.indepth_docs, .indepth_docs_container{
+		height: auto;
+	}
+
+	.indepth_docs_small{
+		position: relative;
+	}
+
+	.indepth_docs{
+		width: 320px;
+	}
+
+	.indepth_docs_left,.indepth_docs_r{
+		float: none;
+		width: 100%;
+	}
+
+	.indepth_docs_description{
+		position: relative;
+		margin-bottom: 5px;
+	}
+	.indepth_quote_container{
+		width: 90%;
+	}
+	
+	.indepth_text_image{
+	width: 90%;
+	float: none;
+	margin: auto 10px;
+	
+	overflow: hidden;
+}
+
+
+
+
+	
+	.indepth_break {
+		max-height: 500px;
+	}
+
+
+
+	
+	#indepth_cover{
+		height: 650px;
+	}
+
+	
+	
+	
+	.indepth_parallax_back{
+		background-attachment: initial;
+	}
+	
+	.indepth_break .indepth_title{
+		font-size:46px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	
+	
+
+}
+
+@media screen and (max-width: 414px) {
+	
+	#indepth_image1{
+		margin:  15px auto;
+	}
+	
+	.indepth_share_item.whatsapp{
+		display: table;
+	}
+	
+	#indepth_cover{
+		height: 540px;	
+	}
+	
+	.indepth_menu_item{
+		float: left;
+		width: 30px;
+		height: 30px;
+		margin-right: 5px;
+		
+	}
+	
+	#indepth_cover .indepth_parallax_back{
+		background: url(../images/movil/JC_1_Portada.jpg);
+		background-size: 100% auto;
+		background-position: center center;
+		background-attachment: inherit;	
+	}
+
+}
+	
+@media screen and (max-width: 360px) {
+	
+	.indepth_menu_item{
+		float: left;
+		width: 25px;
+		height: 25px;
+		margin-right: 7px;
+		
+	}
+}
+	
+	@media screen and (max-width: 320px) {
+.indepth_box{
+	margin:  10px 0;
+}
+	}
+
+
+
+@media screen and (max-height: 414px) {
+	#indepth_libros_container{
+		height: 320px;
+	}
+	
+
+	
+	.indepth_infografia_container{
+		width: 500px;
+	}
+	
+	#indepth_break_1{
+		height: 400px;
+	}
+	
+	.indepth_page_infografia img{
+		width: 500px;
+	}
+	
+	.indepth_break{
+		height: 600px;
+	}
+	
+	#indepth_break_5{
+		height: 300px;
+	}
+	
+	#indepth_cover {
+height: 362px;
+}
+#indepth_cover .indepth_cover_back_body {
+top: 160px;
+}
+
+#indepth_cover .indepth_title {
+font-size: 25px;
+}
+
+	
+	.simione {
+		margin: -40px -50px -20px 10px;
+		float: right;
+	}
+}
+
+@media screen and (max-width: 736px) and (max-height: 414px){
+	#indepth_cover .indepth_parallax_back{
+		background-size: auto 400px;
+	}
+}
+
+@media screen and (max-width: 1024px) and (max-height: 768px){
+	.indepth_parallax_back{
+		background-attachment: initial;
+	}
+}
+
+@media screen and (max-height: 1024px) and (max-width: 768px){
+	.indepth_parallax_back{
+		background-attachment: initial;
+	}
+}
+
+@keyframes changewidth {
+  from {
+    background: red;
+  }
+
+  to {
+    background-size: yellow;
+  }
+}
+
+@-webkit-keyframes changewidth {
+  from {
+    background-size: auto 100%, auto auto;
+  }
+
+  to {
+    background-size: auto 150%, auto auto;
+  }
+}
+
