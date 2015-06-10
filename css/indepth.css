@@ -177,7 +177,7 @@
 }
 
 #indepth_page1{
-	background-color: #dcefff;
+	background-color: #e7edf2;
 }
 
 .indepth_marcas_circle_container{
@@ -200,6 +200,34 @@
 	margin: auto;
 }
 
+.nike .indepth_marca_logo{
+	background-image: url(../images/Marcas-Circulos/Nike.png);
+}
+
+.adidas .indepth_marca_logo{
+	background-image: url(../images/Marcas-Circulos/Adidas.png)
+}
+
+.marathon .indepth_marca_logo{
+	background-image: url(../images/Marcas-Circulos/Marathon.png)
+}
+
+.kappa .indepth_marca_logo{
+	background-image: url(../images/Marcas-Circulos/Kappa.png)
+}
+
+.puma .indepth_marca_logo{
+	background-image: url(../images/Marcas-Circulos/Puma.png)
+}
+
+.romai .indepth_marca_logo{
+	background-image: url(../images/Marcas-Circulos/Romai.png)
+}
+
+.umbro .indepth_marca_logo{
+	background-image: url(../images/Marcas-Circulos/Umbro.png)
+}
+
 .indepth_marca_equipos_cont{
 	border-left: 1px solid #d4dadf;
 	
@@ -220,6 +248,7 @@
 	font-size: 16px;
 	padding-left: 12px;
 	font-weight: 400;
+	margin: 5px auto;
 }
 
 .indepth_marca_equipos_item span{
@@ -251,7 +280,6 @@
 }
 
 .indepth_puntos_circulo{
-	display: table;
 	height: 100%;
 	margin-left: 12px;
 	float: left;
@@ -283,6 +311,12 @@
 	margin: 0 30px;
 	float: left;
 	width: 106px;
+	opacity: .6;
+	cursor: pointer;
+}
+
+.indepth_gol_img:hover{
+	opacity: 1;
 }
 
 .indepth_gol_img:first-child{
@@ -302,7 +336,7 @@
 
 .indepth_goleadores_info_side.izq{
 	float: left;
-	width: 320px;
+	width: 317px;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -311,7 +345,7 @@
 
 .indepth_goleadores_info_side.der{
 	float: right;
-	width: 480px;
+	width: 483px;
 	height: 100%;
 }
 
@@ -343,7 +377,7 @@
 	overflow: hidden;
 	float: left;
 	position: relative;
-
+	border-left: 1px solid #eaebed;
 }
 
 .indepth_goleadores_img_item{
@@ -386,6 +420,13 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 1px solid #e7edf2;
+    border-bottom: 1px solid #e7edf2;
+    
 }
 
 .indepth_ranking_item_img{
@@ -486,6 +527,21 @@
 	background-image: url(../images/Marcas-Desglose/Nike.png);
 }
 
+.indepth_detalle_side.numero{
+	line-height: 60px;
+	height: 100%;
+	float: left;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 30px;
+    background-image: url(../images/Marcas-Desglose/Abrir.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
+
 .indepth_barra_back{
 	width: 100%;
 	height: 15px;
@@ -497,12 +553,123 @@
 .indepth_barra_in{
 	width: 100%;
 	height: 15px;
-	background-color: blue;
+	background-color: #d2dfe6;
 }
 
 .indepth_barra_in div{
 	height: 100%;
+	background-color: #3cacb4;
+}
+
+.indepth_detalle_info{
+	
+	display: table;
+	width: 100%;
+}
+
+.indepth_detalle_info_item{
+	display: table;
+	width: 100%;
+	margin-bottom: 1px;
 	background-color: white;
+}
+
+.indepth_detalle_zapato{
+	width: 160px;
+	height: 160px;
+	border-right: 1px dashed #dee2e6; 
+	float: left;
+	position: relative;
+}
+
+.indepth_detalle_zapato img{
+	width: 100%;
+}
+
+.indepth_detalle_datos{
+	float: left;
+	width: 639px;
+}
+
+.indepth_detalle_dato_eq{
+	height: 100%;
+	
+}
+
+.indepth_detalle_zapato_nombre{
+	font-style: italic;
+	font-size: 20px;
+	padding: 10px;
+	padding-left: 25px;
+	border-bottom: 1px dashed #dee2e6; 
+}
+
+.indepth_detalle_zapato_nombre span{
+	float: right;
+	margin-right: 25px;
+	font-style: normal;
+	font-size: 22px;
+}
+
+.indepth_detalle_jugadores_cont{
+	display: table;
+min-height: 116px;
+margin: auto;
+}
+
+.indepth_detalle_jugadores{
+	display: table-cell;
+	width: 620px;
+	
+	vertical-align: middle;
+}
+
+.indepth_detalle_jugadores_item{
+	width: 145px;
+	height: 32px;
+	margin: 15px 5px;
+	font-size: 14px;
+	float: left;
+}
+
+.indepth_jug_img{
+	height: 100%;
+	float: left;
+	margin-right: 5px;
+}
+
+.indepth_jug_img img{
+	height: 100%;
+}
+
+.indepth_detalle_dato_eq_cont{
+	display: table;
+	width: 478px;
+	height: 160px;
+}
+
+.indepth_detalle_dato_eq{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.indepth_equipo_detalle{
+	float: left;
+	margin-left: 20px;
+	padding-left: 40px;
+	line-height: 30px;
+}
+
+.indepth_equipo_detalle img{
+	width: 30px;
+	margin-right: 10px;
+	float: left;
+}
+
+.indepth_equipo_puntos{
+	float: right;
+	margin-right: 20px;
+	line-height: 30px;
 }
 
 #indepth_footer{
@@ -543,6 +710,8 @@
 	background-position: 50% 50%;
 
 }
+
+
 
 
 .indepth_page_image{
