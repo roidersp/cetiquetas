@@ -361,13 +361,13 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-image:url(../images/LoQuiero/LoQuiero.png);
+	background-image:url(../images/LoQuiero/LoQuiero.jpg);
 	background-position: right 5px bottom 10px;
 	background-repeat: no-repeat;
 }
 
 .indepth_loquiero:hover{
-	background-image: url(../images/LoQuiero/LoQuiero_hover.png);
+	background-image: url(../images/LoQuiero/LoQuiero_hover.jpg);
 }
 
 .indepth_ranking_cont{
