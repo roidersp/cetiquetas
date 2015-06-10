@@ -422,7 +422,10 @@
 	background-color: rgba(0, 0, 0, 0.7);
 	text-align: center;
 	opacity: 0;
-}
+	background-repeat: no-repeat;
+	background-position: right 10px bottom 10px;
+	background-image: url(../images/LoQuiero/LoQuiero.png);
+ }
 
 .indepth_ranking_info:hover{
 	opacity: 1;
