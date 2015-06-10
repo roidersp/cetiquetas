@@ -160,7 +160,7 @@
 
  
 #indepth_cover .indepth_parallax_back{
-	background: url(../images/JC_1_Portada.jpg);
+	background: url(../images/Portada.jpg);
 	background-size: auto 100%;
 	background-position: center center;
 	background-attachment: fixed;	
@@ -176,6 +176,9 @@
 	width: 100%;
 }
 
+#indepth_page1{
+	background-color: #dcefff;
+}
 
 .indepth_marcas_circle_container{
 	width: 798px;
@@ -289,6 +292,163 @@
 .indepth_gol_img:last-child{
 	margin-right: 15px;
 	
+}
+
+.indepth_goleadores_info{
+	width: 100%;
+	background-color: white;
+	height: 160px;
+}
+
+.indepth_goleadores_info_side.izq{
+	float: left;
+	width: 320px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 15px;
+}
+
+.indepth_goleadores_info_side.der{
+	float: right;
+	width: 480px;
+	height: 100%;
+}
+
+.indepth_goleadores_nombre{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.indepth_goleadores_pais{
+	font-size: 16px;
+	font-style: italic;
+}
+
+.indepth_goleadores_goles{
+	margin: 20px 0;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.indepth_goleadores_tenis{
+	font-size: 16px;
+	font-style: italic;
+
+}
+
+.indepth_goleadores_item{
+	width: 160px;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+	position: relative;
+
+}
+
+.indepth_goleadores_img_item{
+	width: 100%;
+	height: 100%;	
+}
+
+.indepth_goleadores_img_item img{
+	width: 100%;
+}
+
+.indepth_loquiero{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image:url(../images/LoQuiero/LoQuiero.png);
+	background-position: right 5px bottom 10px;
+	background-repeat: no-repeat;
+}
+
+.indepth_loquiero:hover{
+	background-image: url(../images/LoQuiero/LoQuiero_hover.png);
+}
+
+.indepth_ranking_cont{
+	width: 100%;
+	display: table;
+}
+
+.indepth_ranking_item{
+	width: 160px;
+	height: 160px;
+	float: left;
+	position: relative;
+}
+
+.indepth_ranking_zapato{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.indepth_ranking_item_img{
+	width: 100%;
+}
+
+.indepth_ranking_item_img img{
+	width: 100%;
+}
+
+.indepth_ranking_item_puntos{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	font-family: 'Roboto Condensed';
+	font-size: 20px;
+	border: 2px solid #dee3e7;
+	color: #dee3e7;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: 600;
+}
+
+.indepth_ranking_info{
+	color: #fff;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	opacity: 0;
+}
+
+.indepth_ranking_info:hover{
+	opacity: 1;
+}
+
+.indepth_ranking_info_marca{
+	font-weight: 600;
+	font-size: 16px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.indepth_ranking_info_zapato{
+	font-style: italic;
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+.indepth_ranking_info_precio{
+	font-style: italic;
+	font-size: 16px;
+	color: #dee3e7;
+	position: absolute;
+	text-align: left;
+	bottom: 20px;
+	left: 10px;
 }
 
 #indepth_footer{
