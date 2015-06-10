@@ -454,6 +454,57 @@
 	left: 10px;
 }
 
+.indepth_detalle_container{
+	width: 100%;
+	display: table;
+}
+
+
+.indepth_detalle_bar{
+	width: 100%;
+	height: 60px;
+}
+
+.indepth_detalle_side{
+	float: left;
+	width: 100px;
+	height: 100%;
+}
+
+.indepth_detalle_side.barra{
+	width: 600px;
+	height: 100%;
+	display: table;
+}
+
+.indepth_detalle_side.marca{
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.indepth_detalle_side.marca.nike{
+	background-image: url(../images/Marcas-Desglose/Nike.png);
+}
+
+.indepth_barra_back{
+	width: 100%;
+	height: 15px;
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+
+.indepth_barra_in{
+	width: 100%;
+	height: 15px;
+	background-color: blue;
+}
+
+.indepth_barra_in div{
+	height: 100%;
+	background-color: white;
+}
+
 #indepth_footer{
 	background-color: #F8F8F8;
 	border-top: 1px solid #8A8A8A;
