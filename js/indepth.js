@@ -6,7 +6,7 @@ var disqus_per_page=3;
 var tamaño_total=1920;
 var tenis_puntos=["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"];
 
-$.getJSON( urlIndepth+"js/equipos.json", function( data ) {
+$.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 	
 	$.getJSON( urlIndepth+"js/tenis.json", function( tenis ) {
 		
@@ -32,7 +32,12 @@ $.getJSON( urlIndepth+"js/equipos.json", function( data ) {
 				cont.find(".indepth_goleadores_goles").html(data.attr("goles")+" goles");
 				
 				var m_tenis=tenis["tenis"][data.attr("tenis")];
-				
+				var m_equipo;
+				$.each(equipos["equipos"], function(index, obj){
+					if(obj.nombre == data.attr("pais")){
+						m_equipo = obj;
+					}
+				});
 				cont.find(".indepth_goleadores_tenis").html(m_tenis["marca"]+" - "+m_tenis["nombre"]);
 				
 				cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Casa/'+normalize(data.attr("pais"))+'.jpg">');
@@ -41,6 +46,8 @@ $.getJSON( urlIndepth+"js/equipos.json", function( data ) {
 				cont.find("#indepth_goleadores_tenis .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Zapatos/'+m_tenis["marca"]+'/'+normalize(m_tenis["nombre"]).replace(/\s/g,"_")+'.jpg">');
 				
 				cont.find("#indepth_goleadores_tenis").attr('href',m_tenis["link"]);
+				cont.find("#indepth_goleadores_local").attr('href',m_equipo["jersey_url"]["local"]);
+				cont.find("#indepth_goleadores_visitante").attr('href',m_equipo["jersey_url"]["visitante"]);
 				console.log(m_tenis["link"]);
 				 if(m_tenis["link"]==""){
 					 cont.find(".indepth_loquiero").css("display","none");
