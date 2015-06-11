@@ -404,7 +404,7 @@
 	background-image: url(../images/LoQuiero/LoQuiero_hover.jpg);
 }
 
-.indepth_ranking_cont{
+#indepth_ranking_cont{
 	width: 100%;
 	display: table;
 }
@@ -527,6 +527,26 @@
 	background-image: url(../images/Marcas-Desglose/Nike.png);
 }
 
+.indepth_detalle_side.marca.puma{
+	background-image: url(../images/Marcas-Desglose/Puma.png);
+}
+
+.indepth_detalle_side.marca.umbro{
+	background-image: url(../images/Marcas-Desglose/Umbro.png);
+}
+
+.indepth_detalle_side.marca.adidas{
+	background-image: url(../images/Marcas-Desglose/Adidas.png);
+}
+
+.indepth_detalle_side.marca.marathon{
+	background-image: url(../images/Marcas-Desglose/Marathon.png);
+}
+
+.indepth_detalle_side.marca.kappa{
+	background-image: url(../images/Marcas-Desglose/Kappa.png);
+}
+
 .indepth_detalle_side.numero{
 	line-height: 60px;
 	height: 100%;
@@ -565,6 +585,7 @@
 	
 	display: table;
 	width: 100%;
+	display: none;
 }
 
 .indepth_detalle_info_item{

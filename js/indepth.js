@@ -4,6 +4,70 @@ var disqus_url="test";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
+var tenis_puntos=["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"];
+
+$.getJSON( "js/equipos.json", function( data ) {
+	console.log(data);
+	
+	$.getJSON( "js/tenis.json", function( tenis ) {
+		$(".indepth_gol_img").hover(function(){
+				var cont=$(".indepth_goleadores_info");
+				var data=$(this);
+				cont.find(".indepth_goleadores_nombre").html(data.attr("nombre"));
+				cont.find(".indepth_goleadores_pais").html(data.attr("pais"));
+				cont.find(".indepth_goleadores_goles").html(data.attr("goles"));
+				
+				console.log(data.attr("tenis"));
+				var m_tenis=tenis["tenis"][data.attr("tenis")];
+				console.log(m_tenis);
+				
+				cont.find(".indepth_goleadores_tenis").html(m_tenis["marca"]+" - "+m_tenis["nombre"]);
+				
+				cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="images/Camisetas/Casa/'+normalize(data.attr("pais"))+'.jpg">');
+				cont.find("#indepth_goleadores_visitante .indepth_goleadores_img_item").html('<img src="images/Camisetas/Visita/'+normalize(data.attr("pais"))+'.jpg">');
+				
+				cont.find("#indepth_goleadores_tenis .indepth_goleadores_img_item").html('<img src="images/Zapatos/'+m_tenis["marca"]+'/'+normalize(m_tenis["nombre"]).replace(/\s/g,"_")+'.jpg">');
+				
+				cont.find("#indepth_goleadores_tenis").attr('href',m_tenis["link"]);
+				
+			});
+			
+			var ranking=$("#indepth_ranking_cont");
+			
+			$.each(tenis["tenis"], function( i, item ) {
+				console.log(item);
+				ranking.append('<a target="_blank" class="indepth_ranking_item" href="'+item["link"]+'">');
+				
+				var ranging_a=$(ranking.find("a").get(i));
+				ranging_a.attr("href",item['link']);
+				if(item['link']==""){
+					ranging_a.click(function(e) {
+						 e.preventDefault(); 
+					});
+
+				}
+				
+				ranging_a.append(createDiv("", "indepth_ranking_zapato",""));
+				ranging_a.find(".indepth_ranking_zapato").append(createDiv("", "indepth_ranking_item_img",""));
+				ranging_a.find(".indepth_ranking_item_img").html('<img src="images/Zapatos/'+item["marca"]+'/'+normalize(item["nombre"]).replace(/\s/g,"_")+'.jpg">');
+				ranging_a.find(".indepth_ranking_zapato").append(createDiv("", "indepth_ranking_item_puntos",""));
+				ranging_a.find(".indepth_ranking_item_puntos").html(tenis_puntos[i]);
+				
+				ranging_a.append(createDiv("", "indepth_ranking_info",""));
+				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_marca">'+item['marca']+'</div>');
+				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_zapato">'+item['nombre']+'</div>');
+				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_precio">'+item['precio']+'</div>');
+				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_loquiero"></div>');
+				
+				
+			});
+			
+	});
+	
+	
+	
+});
+
 
 
  function loadDisqus(source, identifier, url) {
@@ -90,3 +154,35 @@ $(window).on("resize", function(){
 	 	$('#indepth_cover .indepth_cover_back_body').css("top",ventana_alto*.30);
  	}
 });
+
+var createDiv = function(newid, newclass,color) {
+	return $('<div/>', {
+	          id: newid,
+	          class: newclass,
+	          css:{
+	             backgroundColor: color
+	          }
+	        });
+} 
+
+var normalize = (function() {
+  var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
+      to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
+      mapping = {};
+ 
+  for(var i = 0, j = from.length; i < j; i++ )
+      mapping[ from.charAt( i ) ] = to.charAt( i );
+ 
+  return function( str ) {
+      var ret = [];
+      for( var i = 0, j = str.length; i < j; i++ ) {
+          var c = str.charAt( i );
+          if( mapping.hasOwnProperty( str.charAt( i ) ) )
+              ret.push( mapping[ c ] );
+          else
+              ret.push( c );
+      }      
+      return ret.join( '' );
+  }
+ 
+})();
