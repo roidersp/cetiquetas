@@ -152,7 +152,7 @@
 }
 
 #indepth_cover{
-	background: #141414;
+	background: #000;
 }
 
 
@@ -257,7 +257,30 @@
 .indepth_sub_img{
 	width: 100%;
 	display: table;
-	margin: 20px auto;
+	height: 36px;
+	margin: 30px auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 800px auto;
+	margin-top: 80px;
+}
+
+
+
+.indepth_sub_img.puntos{
+	background-image: url(../images/Subtitulos/Puntos.png)
+}
+
+.indepth_sub_img.goleadores{
+	background-image: url(../images/Subtitulos/Goleadores.png)
+}
+
+.indepth_sub_img.detalle{
+	background-image: url(../images/Subtitulos/Detalle.png)
+}
+
+.indepth_sub_img.ranking{
+	background-image: url(../images/Subtitulos/Ranking.png)
 }
 
 .indepth_sub_img img{
@@ -797,7 +820,6 @@ margin: auto;
 	
 	
 	#indepth_cover .indepth_parallax_back{
-		background-size: cover;
 		background-attachment: scroll;
 		background-repeat: no-repeat;
 	}
@@ -842,7 +864,7 @@ margin: auto;
 	}
 	
 	.indepth_sub_img{
-		width: 800px;
+		width: 100%;
 	}
 
 
@@ -1043,6 +1065,10 @@ margin: auto;
 		width: 320px;
 	}
 	
+	.indepth_sub_img{
+		background-size: 550px auto;
+	}
+	
 	.indepth_puntos_item{
 		height: 40px;
 		margin-bottom: 20px;
@@ -1101,8 +1127,7 @@ margin: auto;
 
 	
 	#indepth_cover .indepth_parallax_back{
-		background: url(../images/movil/JC_1_Portada.jpg);
-		background-size: 100% auto;
+		background-size: auto 500px;
 		background-position: center center;
 		background-attachment: inherit;	
 	}
@@ -1110,7 +1135,11 @@ margin: auto;
 }
 	
 @media screen and (max-width: 375px) {
-	
+	#indepth_cover .indepth_parallax_back{
+		background-size: auto 450px;
+		background-position: center center;
+		background-attachment: inherit;	
+	}
 
 }
 	
@@ -1118,6 +1147,12 @@ margin: auto;
 		.indepth_detalle_side.barra {
   width: 150px;
 }
+
+#indepth_cover .indepth_parallax_back{
+		background-size: auto 400px;
+		background-position: center center;
+		background-attachment: inherit;	
+	}
 	}
 
 
@@ -1169,7 +1204,7 @@ font-size: 25px;
 
 @media screen and (max-width: 736px) and (max-height: 414px){
 	#indepth_cover .indepth_parallax_back{
-		background-size: auto 400px;
+		background-size: contain;
 	}
 }
 
