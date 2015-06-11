@@ -784,8 +784,9 @@ margin: auto;
 	}
 	
 	.indepth_page_body{
-		width:95%;
+		width:700px;
 		margin: 0 auto;
+		overflow: hidden;
 	}
 	
 		
@@ -813,117 +814,250 @@ margin: auto;
 	.indepth_marca_equipos_item{
 		font-size: 15px;
 	}
-		
+	
+	.indepth_goleadores_container{
+		width: auto;
+	}
+	
+	.indepth_gol_img{
+		margin: 0 15px;
+	}
+	
+	.indepth_goleadores_info_side.izq{
+		width: auto;
+		max-width: 200px;
+	}
+	
+	.indepth_goleadores_goles{
+		margin-bottom: 10px;
+	}
+	
+	#indepth_ranking_cont{
+		width: 640px;
+		margin: auto;
+	}
 
-
+	.indepth_detalle_side.barra{
+		width: 500px;
+	}
+	
+	.indepth_sub_img{
+		width: 800px;
+	}
 
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
 	
-		.indepth_break{
-			display: none;
-		}
-		
-		.indepth_page_image{
-			background-size: 414px;
-			background-repeat: no-repeat;
-		}
-		
-		
+	.indepth_page_body{
+		width:600px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
 	
+		
+	#indepth_cover .indepth_parallax_back{
+		background-size: auto 800px;
+		background-position: 50% 0;
+	}
+	
+	
+	#indepth_cover .indepth_parallax_back{
+		background-size: cover;
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+	}
+	
+	.indepth_marca_logo{
+		width: 90px;
+		height: 90px;
+		background-size: contain;
+	}
+	
+	
+
+	
+	.indepth_marcas_item{
+		width: 100px;
+	}
+	
+	.indepth_marca_equipos_item {
+	  font-size: 13px;
+	}
+	
+	.indepth_gol_img{
+		width: 90px;
+	}
+	
+	.indepth_goleadores_info_side.der{
+		width: auto;
+	}
+	
+	.indepth_goleadores_item{
+		width: 120px;
+		height: 120px;
+		margin-top: 20px;
+	}
+	
+	.indepth_goleadores_info_side.izq {
+	  max-width: 230px;
+	}
+	
+	#indepth_ranking_cont{
+		width:  480px;
+	}
+	.indepth_sub_img img {
+	  width: 100%;
+	  margin-left: -100px;
+	}
+	
+	.indepth_detalle_side.numero{
+		width: 50px;
+	}
+	
+	.indepth_detalle_side.barra{
+		width: 450px;
+	}
+	
+
 }
+
 
 
 @media screen and (max-width: 605px) {
-	
-	
-	
-	#com{
-		width: 98%;
-		margin: auto;
-	}
-	
-	.indepth_docs_container{
-		width: 320px;
-		height: auto;
-		margin: auto;
-	}
-
-	.indepth_docs, .indepth_docs_container{
-		height: auto;
-	}
-
-	.indepth_docs_small{
-		position: relative;
-	}
-
-	.indepth_docs{
-		width: 320px;
-	}
-
-	.indepth_docs_left,.indepth_docs_r{
-		float: none;
+	.indepth_page_content .indepth_page_body{
 		width: 100%;
 	}
+	
+	.indepth_marcas_item{
+		width: 300px;;
+		float: none;
+		margin: 15px auto;
+	}
+	
+	.indepth_marca_marcador{
+		float: left;
+		width: 34px;
+		
+	}
+	
+	.indepth_marca_equipos_cont{
+		float: left;
+		display: table;
+	}
+	
+	.indepth_marca_equipos_item_cont{
+		  display: table-cell;
+  vertical-align: middle;
 
-	.indepth_docs_description{
-		position: relative;
-		margin-bottom: 5px;
-	}
-	.indepth_quote_container{
-		width: 90%;
 	}
 	
-	.indepth_text_image{
-	width: 90%;
-	float: none;
-	margin: auto 10px;
+	.indepth_marca_equipos_item{
+	}
 	
-	overflow: hidden;
+	.indepth_marca_logo{
+		float: left;
+	}
+	
+	.indepth_marca_logo{
+		width: 106px;
+		height: 106px;
+	}
+	
+	.indepth_marca_marcador{
+		height: 106px;
+		line-height: 106px;
+		margin: 0 15px;
+	}
+	
+	.indepth_puntos_container{
+		width: 96%;
+		margin: auto;	
+	}
+	
+	.indepth_puntos_texto{
+		font-size: 16px;
+	}
+	
+	.indepth_gol_img{
+		margin: 0 5px;
+	}
+	
+	.indepth_gol_img:first-child{
+		margin-left: auto;
+	}
+	
+	.indepth_gol_img:last-child {
+  margin-right: auto;
 }
 
-
-
-
-	
-	.indepth_break {
-		max-height: 500px;
-	}
-
-
-
-	
-	#indepth_cover{
-		height: 650px;
-	}
-
-	
-	
-	
-	.indepth_parallax_back{
-		background-attachment: initial;
+	.indepth_goleadores_item{
+		width: 200px;
+		background-color: white;
+		height: 160px;
+		float: none;
+		margin: 0;
 	}
 	
-	.indepth_break .indepth_title{
-		font-size:46px;
-		text-transform: uppercase;
-		font-weight: 700;
+	.indepth_goleadores_img_item{
+		width: 160px;
+		margin: auto;
 	}
 	
+	.indepth_goleadores_info_side.der{
+		float: none;
+	}
+	
+	.indepth_goleadores_info_side.izq{
+		width: auto;
+		max-width: 250px;
+	}
+	
+	.indepth_goleadores_info{
+		height: auto;
+		display: table;
+		margin: auto;
+		width: 250px;;
+	}	
+	
+	.indepth_detalle_side.barra {
+	  width: 300px;
+	}
+	
+	.indepth_detalle_item{
+		display: table;
+		margin: auto;
+	}
+	
+	.indepth_marcas_circle_container{
+		width: 100%;
+	}
 	
 
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	
-	#indepth_image1{
-		margin:  15px auto;
+	#indepth_ranking_cont{
+		width: 320px;
+	}
+	
+	.indepth_puntos_item{
+		height: 40px;
+		margin-bottom: 20px;
+	}
+	
+	.indepth_goleadores_container{
+		width: 300px;
 	}
 	
 	.indepth_share_item.whatsapp{
 		display: table;
+	}
+	
+	.indepth_detalle_side.barra{
+		width: 200px;
 	}
 	
 	#indepth_cover{
@@ -938,6 +1072,34 @@ margin: auto;
 		
 	}
 	
+	.indepth_gol_img {
+  margin: 5px 5px;
+}
+
+.indepth_puntos_circulo{
+	float: none;
+	margin: 5px auto;
+	display: table;
+}
+
+.indepth_puntos_texto{
+	text-align: center;
+	display: block;
+}
+
+.indepth_puntos_item{
+	height: auto;
+}
+
+.indepth_gol_img:nth-child(4){
+	margin-left: 55px;
+}
+
+.indepth_puntos_texto div{
+	display: block;
+}
+
+	
 	#indepth_cover .indepth_parallax_back{
 		background: url(../images/movil/JC_1_Portada.jpg);
 		background-size: 100% auto;
@@ -947,20 +1109,14 @@ margin: auto;
 
 }
 	
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
 	
-	.indepth_menu_item{
-		float: left;
-		width: 25px;
-		height: 25px;
-		margin-right: 7px;
-		
-	}
+
 }
 	
 	@media screen and (max-width: 320px) {
-.indepth_box{
-	margin:  10px 0;
+		.indepth_detalle_side.barra {
+  width: 150px;
 }
 	}
 

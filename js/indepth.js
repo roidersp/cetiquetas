@@ -71,7 +71,7 @@ $.getJSON( "js/equipos.json", function( data ) {
 				
 				ranging_a.append(createDiv("", "indepth_ranking_zapato",""));
 				ranging_a.find(".indepth_ranking_zapato").append(createDiv("", "indepth_ranking_item_img",""));
-				ranging_a.find(".indepth_ranking_item_img").html('<img src="images/Zapatos/'+item["marca"]+'/'+normalize(item["nombre"]).replace(/\s/g,"_")+'.jpg">');
+				ranging_a.find(".indepth_ranking_item_img").html('<img src="images/Zapatos/'+item["marca"].replace(/\s/g,"_")+'/'+normalize(item["nombre"]).replace(/\s/g,"_")+'.jpg">');
 				ranging_a.find(".indepth_ranking_zapato").append(createDiv("", "indepth_ranking_item_puntos",""));
 				ranging_a.find(".indepth_ranking_item_puntos").html(tenis_puntos[i]);
 				
