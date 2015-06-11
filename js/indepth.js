@@ -29,6 +29,13 @@ $.getJSON( "js/equipos.json", function( data ) {
 				cont.find("#indepth_goleadores_tenis .indepth_goleadores_img_item").html('<img src="images/Zapatos/'+m_tenis["marca"]+'/'+normalize(m_tenis["nombre"]).replace(/\s/g,"_")+'.jpg">');
 				
 				cont.find("#indepth_goleadores_tenis").attr('href',m_tenis["link"]);
+				 if(m_tenis["link"]==""){
+					cont.find("#indepth_goleadores_tenis").click(function(e) {
+						 e.preventDefault(); 
+					});
+
+				}
+				 
 				
 			});
 			
