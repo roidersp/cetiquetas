@@ -1,3 +1,7 @@
+#recommended-wrapper{
+	display: none;
+}
+
 .indepth_share{
 		display: none;
 		position: fixed;
@@ -50,6 +54,7 @@
 	#com{
 		width: 90%;
 		margin: auto;
+		margin-top: 1px;
 	}
 	#indepth_menu{
 		display: table;
@@ -1202,9 +1207,7 @@ font-size: 25px;
 }
 
 @media screen and (max-width: 736px) and (max-height: 414px){
-	#indepth_cover .indepth_parallax_back{
-		background-size: contain;
-	}
+	#indepth_cover .indepth_parallax_back{	}
 }
 
 @media screen and (max-width: 1024px) and (max-height: 768px){

@@ -6,9 +6,9 @@ var disqus_per_page=3;
 var tamaño_total=1920;
 var tenis_puntos=["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"];
 
-$.getJSON( "js/equipos.json", function( data ) {
+$.getJSON( urlIndepth+"js/equipos.json", function( data ) {
 	
-	$.getJSON( "js/tenis.json", function( tenis ) {
+	$.getJSON( urlIndepth+"js/tenis.json", function( tenis ) {
 		
 		
 		if($(".indepth_goleadores_item").attr("href")=="#"){
@@ -35,10 +35,10 @@ $.getJSON( "js/equipos.json", function( data ) {
 				
 				cont.find(".indepth_goleadores_tenis").html(m_tenis["marca"]+" - "+m_tenis["nombre"]);
 				
-				cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="images/Camisetas/Casa/'+normalize(data.attr("pais"))+'.jpg">');
-				cont.find("#indepth_goleadores_visitante .indepth_goleadores_img_item").html('<img src="images/Camisetas/Visita/'+normalize(data.attr("pais"))+'.jpg">');
+				cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Casa/'+normalize(data.attr("pais"))+'.jpg">');
+				cont.find("#indepth_goleadores_visitante .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Visita/'+normalize(data.attr("pais"))+'.jpg">');
 				
-				cont.find("#indepth_goleadores_tenis .indepth_goleadores_img_item").html('<img src="images/Zapatos/'+m_tenis["marca"]+'/'+normalize(m_tenis["nombre"]).replace(/\s/g,"_")+'.jpg">');
+				cont.find("#indepth_goleadores_tenis .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Zapatos/'+m_tenis["marca"]+'/'+normalize(m_tenis["nombre"]).replace(/\s/g,"_")+'.jpg">');
 				
 				cont.find("#indepth_goleadores_tenis").attr('href',m_tenis["link"]);
 				console.log(m_tenis["link"]);
@@ -71,7 +71,7 @@ $.getJSON( "js/equipos.json", function( data ) {
 				
 				ranging_a.append(createDiv("", "indepth_ranking_zapato",""));
 				ranging_a.find(".indepth_ranking_zapato").append(createDiv("", "indepth_ranking_item_img",""));
-				ranging_a.find(".indepth_ranking_item_img").html('<img src="images/Zapatos/'+item["marca"].replace(/\s/g,"_")+'/'+normalize(item["nombre"]).replace(/\s/g,"_")+'.jpg">');
+				ranging_a.find(".indepth_ranking_item_img").html('<img src="'+urlIndepth+'images/Zapatos/'+item["marca"].replace(/\s/g,"_")+'/'+normalize(item["nombre"]).replace(/\s/g,"_")+'.jpg">');
 				ranging_a.find(".indepth_ranking_zapato").append(createDiv("", "indepth_ranking_item_puntos",""));
 				ranging_a.find(".indepth_ranking_item_puntos").html(tenis_puntos[i]);
 				
