@@ -44,7 +44,7 @@
           "nombre": "Enner",
           "apellido": "Valencia",
           "goles": "0",
-          "tenis": "12"
+          "tenis": "11"
         },
         {
           "nombre": "Fidel",
@@ -68,7 +68,7 @@
           "nombre": "Jefferson",
           "apellido": "Montero",
           "goles": "0",
-          "tenis": "10"
+          "tenis": "9"
         }
       ]
     },
@@ -134,25 +134,25 @@
           "nombre": "Carlos",
           "apellido": "Tévez",
           "goles": "0",
-          "tenis": "8"
+          "tenis": "2"
         },
         {
           "nombre": "Gonzalo",
           "apellido": "Higuaín",
           "goles": "0",
-          "tenis": "9"
+          "tenis": "8"
         },
         {
           "nombre": "Ángel",
           "apellido": "di María",
           "goles": "0",
-          "tenis": "10"
+          "tenis": "9"
         },
         {
           "nombre": "Ezequiel",
           "apellido": "Lavezzi",
           "goles": "0",
-          "tenis": "10"
+          "tenis": "9"
         }
       ]
     },
@@ -173,13 +173,13 @@
           "nombre": "Diego",
           "apellido": "Godín",
           "goles": "0",
-          "tenis": "11"
+          "tenis": "10"
         },
         {
           "nombre": "Diego",
           "apellido": "Rolán",
           "goles": "0",
-          "tenis": "12"
+          "tenis": "11"
         }
       ]
     },
@@ -194,25 +194,25 @@
           "nombre": "Óscar",
           "apellido": "Cardozo",
           "goles": "0",
-          "tenis": "11"
+          "tenis": "10"
         },
         {
           "nombre": "Roque",
           "apellido": "Santa Cruz",
           "goles": "0",
-          "tenis": "11"
+          "tenis": "10"
         },
         {
           "nombre": "Édgar",
           "apellido": "Benítez",
           "goles": "0",
-          "tenis": "14"
+          "tenis": "13"
         },
         {
           "nombre": "Lucas",
           "apellido": "Barrios",
           "goles": "0",
-          "tenis": "13"
+          "tenis": "12"
         }
       ]
     },
@@ -239,7 +239,7 @@
           "nombre": "Coutinho",
           "apellido": "",
           "goles": "0",
-          "tenis": "13"
+          "tenis": "12"
         },
         {
           "nombre": "Robihno",

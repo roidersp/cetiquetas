@@ -59,51 +59,37 @@
     {
       "num": "8",
       "marca": "Nike",
-      "nombre": "Tiempo Legend V",
-      "precio": "$2,799",
-      "link": "http://www.innovasport.com/tiempo-legend-v-fg-hombre-n4.html"
-    },
-    {
-      "num": "9",
-      "marca": "Nike",
       "nombre": "Hypervenom II Phinish",
       "precio": "$3,199",
       "link": "http://www.innovasport.com/hypervenom-phatal-ii-df-fg-hombres-n49.html"
     },
     {
-      "num": "10",
+      "num": "9",
       "marca": "Adidas",
       "nombre": "X15",
       "precio": "",
       "link": ""
     },
     {
-      "num": "11",
+      "num": "10",
       "marca": "Puma",
       "nombre": "EvoPower",
       "precio": "$3,299",
       "link": "http://www.innovasport.com/evopower-1-2-graphic-fg-hombre-n15.html"
     },
     {
-      "num": "12",
+      "num": "11",
       "marca": "Adidas",
       "nombre": "Ace15",
       "precio": "$3,699",
       "link": ""
     },
     {
-      "num": "13",
+      "num": "12",
       "marca": "Nike",
       "nombre": "Mercurial Vapor X",
       "precio": "$3,699",
       "link": "http://www.innovasport.com/mercurial-vapor-x-fg-hombre-n15.html"
-    },
-    {
-      "num": "14",
-      "marca": "Prima",
-      "nombre": "",
-      "precio": "",
-      "link": ""
     }
   ]
 }

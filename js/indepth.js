@@ -7,19 +7,31 @@ var tamaño_total=1920;
 var tenis_puntos=["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"];
 
 $.getJSON( "js/equipos.json", function( data ) {
-	console.log(data);
 	
 	$.getJSON( "js/tenis.json", function( tenis ) {
+		
+		
+		if($(".indepth_goleadores_item").attr("href")=="#"){
+			console.log()
+			$(".indepth_goleadores_item .indepth_loquiero").css("display","none");
+		$(".indepth_goleadores_item").bind('click', function(e){
+			
+				
+				
+				e.preventDefault();
+			
+					        
+		});
+		}
+		
 		$(".indepth_gol_img").hover(function(){
 				var cont=$(".indepth_goleadores_info");
 				var data=$(this);
 				cont.find(".indepth_goleadores_nombre").html(data.attr("nombre"));
 				cont.find(".indepth_goleadores_pais").html(data.attr("pais"));
-				cont.find(".indepth_goleadores_goles").html(data.attr("goles"));
+				cont.find(".indepth_goleadores_goles").html(data.attr("goles")+" goles");
 				
-				console.log(data.attr("tenis"));
 				var m_tenis=tenis["tenis"][data.attr("tenis")];
-				console.log(m_tenis);
 				
 				cont.find(".indepth_goleadores_tenis").html(m_tenis["marca"]+" - "+m_tenis["nombre"]);
 				
@@ -29,11 +41,19 @@ $.getJSON( "js/equipos.json", function( data ) {
 				cont.find("#indepth_goleadores_tenis .indepth_goleadores_img_item").html('<img src="images/Zapatos/'+m_tenis["marca"]+'/'+normalize(m_tenis["nombre"]).replace(/\s/g,"_")+'.jpg">');
 				
 				cont.find("#indepth_goleadores_tenis").attr('href',m_tenis["link"]);
+				console.log(m_tenis["link"]);
 				 if(m_tenis["link"]==""){
-					cont.find("#indepth_goleadores_tenis").click(function(e) {
-						 e.preventDefault(); 
+					 cont.find(".indepth_loquiero").css("display","none");
+					$(".indepth_goleadores_item").bind('click', function(e){
+					        e.preventDefault();
+					        
 					});
+					
 
+				}else{
+					cont.find(".indepth_loquiero").css("display","block");
+					$(".indepth_goleadores_item").unbind('click');
+					 
 				}
 				 
 				
@@ -47,12 +67,7 @@ $.getJSON( "js/equipos.json", function( data ) {
 				
 				var ranging_a=$(ranking.find("a").get(i));
 				ranging_a.attr("href",item['link']);
-				if(item['link']==""){
-					ranging_a.click(function(e) {
-						 e.preventDefault(); 
-					});
-
-				}
+				
 				
 				ranging_a.append(createDiv("", "indepth_ranking_zapato",""));
 				ranging_a.find(".indepth_ranking_zapato").append(createDiv("", "indepth_ranking_item_img",""));
@@ -64,8 +79,18 @@ $.getJSON( "js/equipos.json", function( data ) {
 				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_marca">'+item['marca']+'</div>');
 				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_zapato">'+item['nombre']+'</div>');
 				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_precio">'+item['precio']+'</div>');
-				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_loquiero"></div>');
 				
+				
+				if(item['link']==""){
+					ranging_a.click(function(e) {
+						 e.preventDefault(); 
+					});
+					
+					
+
+				}else{
+					ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_loquiero"></div>');
+				}
 				
 			});
 			
