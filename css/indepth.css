@@ -1127,7 +1127,8 @@ margin: auto;
 
 	
 	#indepth_cover .indepth_parallax_back{
-		background-size: auto 500px;
+		background-image: url(../images/Portada_movil.jpg);
+		background-size: cover;
 		background-position: center center;
 		background-attachment: inherit;	
 	}
@@ -1136,7 +1137,6 @@ margin: auto;
 	
 @media screen and (max-width: 375px) {
 	#indepth_cover .indepth_parallax_back{
-		background-size: auto 450px;
 		background-position: center center;
 		background-attachment: inherit;	
 	}
@@ -1149,7 +1149,6 @@ margin: auto;
 }
 
 #indepth_cover .indepth_parallax_back{
-		background-size: auto 400px;
 		background-position: center center;
 		background-attachment: inherit;	
 	}
