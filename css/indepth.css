@@ -529,6 +529,7 @@
 .indepth_detalle_bar{
 	width: 100%;
 	height: 60px;
+	cursor: pointer;
 }
 
 .indepth_detalle_side{
@@ -585,6 +586,10 @@
     background-image: url(../images/Marcas-Desglose/Abrir.png);
     background-position: right 10px center;
     background-repeat: no-repeat;
+}
+
+.indepth_detalle_side.open{
+	
 }
 
 .indepth_barra_back{
@@ -716,6 +721,52 @@ margin: auto;
 	float: right;
 	margin-right: 20px;
 	line-height: 30px;
+}
+
+a .indepth_balon{
+	color: black;
+}
+
+.indepth_balon{
+	height: 160px;
+	background: white;
+	width: 100%;
+	cursor: pointer;
+	margin: 40px auto;
+}
+
+.indepth_balon_cont{
+	height: 100%;
+	float: left;
+}
+
+.indepth_balon_img {
+	height: 100%;
+	float: left;
+}
+
+.indepth_balon_img img{
+	height: 100%;
+}
+
+.indepth_balon_nombre{
+	  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.balon_goles{
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	 font-weight: 400;
+	 
+}
+
+.indepth_balon_descripción{
+	  font-size: 16px;
+  font-style: italic;
+  margin-top: 40px;
 }
 
 #indepth_footer{

@@ -6,13 +6,18 @@ var disqus_per_page=3;
 var tamaño_total=1920;
 var tenis_puntos=["2","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"];
 
+$(".indepth_detalle_bar").on("click",function(){
+	$(this).addClass("open");
+	$(this).parent().find(".indepth_detalle_info").toggle();
+}
+)
+
 $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 	
 	$.getJSON( urlIndepth+"js/tenis.json", function( tenis ) {
 		
 		
 		if($(".indepth_goleadores_item").attr("href")=="#"){
-			console.log()
 			$(".indepth_goleadores_item .indepth_loquiero").css("display","none");
 		$(".indepth_goleadores_item").bind('click', function(e){
 			
@@ -48,7 +53,6 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				cont.find("#indepth_goleadores_tenis").attr('href',m_tenis["link"]);
 				cont.find("#indepth_goleadores_local").attr('href',m_equipo["jersey_url"]["local"]);
 				cont.find("#indepth_goleadores_visitante").attr('href',m_equipo["jersey_url"]["visitante"]);
-				console.log(m_tenis["link"]);
 				 if(m_tenis["link"]==""){
 					 cont.find(".indepth_loquiero").css("display","none");
 					$(".indepth_goleadores_item").bind('click', function(e){
@@ -69,7 +73,6 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 			var ranking=$("#indepth_ranking_cont");
 			
 			$.each(tenis["tenis"], function( i, item ) {
-				console.log(item);
 				ranking.append('<a target="_blank" class="indepth_ranking_item" href="'+item["link"]+'">');
 				
 				var ranging_a=$(ranking.find("a").get(i));

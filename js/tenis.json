@@ -90,6 +90,28 @@
       "nombre": "Mercurial Vapor X",
       "precio": "$3,699",
       "link": "http://www.innovasport.com/mercurial-vapor-x-fg-hombre-n15.html&utm_source=Juanfutbol&utm_medium=Rankingtachones&utm_campaign=Copaamerica"
+    },
+    {
+      "num": "13",
+      "marca": "Nike",
+      "nombre": "Magista",
+      "precio": "$3,699",
+      "link": "http://www.innovasport.com/hombres/calzado?manufacturer=353&sport=261&utm_source=Juanfutbol&utm_medium=Rankingtachones&utm_campaign=Copaamerica"
+    },
+    {
+      "num": "14",
+      "marca": "Nike",
+      "nombre": "Mercurial",
+      "precio": "$3,699",
+      "link": "http://www.innovasport.com/hombres/calzado?manufacturer=353&sport=261&utm_source=Juanfutbol&utm_medium=Rankingtachones&utm_campaign=Copaamerica"
+    }
+    ,
+    {
+      "num": "15",
+      "marca": "Nike",
+      "nombre": "Tiempo",
+      "precio": "$3,699",
+      "link": "http://www.innovasport.com/hombres/calzado?manufacturer=353&sport=261&utm_source=Juanfutbol&utm_medium=Rankingtachones&utm_campaign=Copaamerica"
     }
   ]
 }
