@@ -1,10 +1,11 @@
+
 var disqus_shortname = 'juanfutbol';
 var disqus_identifier;
 var disqus_url="test";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
-var tenis_puntos=["2","0","0","0","0","1","1","0","0","0","0","0","2","0","0","0","0","0","0","0","0"];
+var tenis_puntos=["0","0","0","2","1","1","1","0","0","0","0","0","0","0","2","1","0","2","0","0"];
 
 $(".indepth_detalle_bar").on("click",function(){
 	$(this).addClass("open");
@@ -13,8 +14,12 @@ $(".indepth_detalle_bar").on("click",function(){
 )
 
 $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
+	console.log(equipos);
 	
 	$.getJSON( urlIndepth+"js/tenis.json", function( tenis ) {
+		
+		console.log(equipos);
+		
 		
 		
 		if($(".indepth_goleadores_item").attr("href")=="#"){
@@ -57,7 +62,6 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 					 cont.find(".indepth_loquiero").css("display","none");
 					$(".indepth_goleadores_item").bind('click', function(e){
 					        e.preventDefault();
-					        
 					});
 					
 
@@ -72,23 +76,78 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 			
 			var ranking=$("#indepth_ranking_cont");
 			
-			$.each(tenis["tenis"], function( i, item ) {
-				ranking.append('<a target="_blank" class="indepth_ranking_item" href="'+item["link"]+'">');
+			
+			
+			var tenis_orden=[];
+			
+			$.each(tenis_puntos, function( i, item ) {
+				
+				var tenis_h = new Array();
+				tenis_h["goles"]=item;
+				tenis_h["id"]=i;
+				
+				
+				
+				if(tenis_orden.length==0){
+						tenis_orden.push(tenis_h);
+					}else{
+						if(parseInt(tenis_orden[0]['goles'])<=item){
+							tenis_orden.unshift(tenis_h);
+							
+						}else{
+							var min_l=tenis_orden[tenis_orden.length-1]['goles'];
+								if(parseInt(min_l)>=parseInt(item)){
+									tenis_orden.push(tenis_h);
+									
+								}else{
+									$.each(tenis_orden, function( k, tenis_j ) {
+										min2=parseInt(tenis_j['goles']);
+										
+										if(min2<=item){
+											tenis_orden.splice(k, 0,tenis_h);
+											return false;
+										};
+									});
+								}
+						}
+					}
+			});
+			
+			
+			
+			tenis_x=tenis["tenis"];
+			
+			
+			
+			
+			
+			$.each(tenis_orden, function( i, item ) {
+				
+				//console.log(tenis_orden[item["id"]]);
+				console.log(item);
+				var tenis_id=item["id"];
+				var tenis_goles=item["goles"];
+				
+				console.log(tenis_id);
+				
+				console.log(tenis_x[tenis_id]);
+				
+				ranking.append('<a target="_blank" class="indepth_ranking_item" href="'+tenis_x[tenis_id]["link"]+'">');
 				
 				var ranging_a=$(ranking.find("a").get(i));
-				ranging_a.attr("href",item['link']);
+				ranging_a.attr("href",tenis_x[tenis_id]['link']);
 				
 				
 				ranging_a.append(createDiv("", "indepth_ranking_zapato",""));
 				ranging_a.find(".indepth_ranking_zapato").append(createDiv("", "indepth_ranking_item_img",""));
-				ranging_a.find(".indepth_ranking_item_img").html('<img src="'+urlIndepth+'images/Zapatos/'+item["marca"].replace(/\s/g,"_")+'/'+normalize(item["nombre"]).replace(/\s/g,"_")+'.jpg">');
+				ranging_a.find(".indepth_ranking_item_img").html('<img src="'+urlIndepth+'images/Zapatos/'+tenis_x[tenis_id]["marca"].replace(/\s/g,"_")+'/'+normalize(tenis_x[tenis_id]["nombre"]).replace(/\s/g,"_")+'.jpg">');
 				ranging_a.find(".indepth_ranking_zapato").append(createDiv("", "indepth_ranking_item_puntos",""));
-				ranging_a.find(".indepth_ranking_item_puntos").html(tenis_puntos[i]);
+				ranging_a.find(".indepth_ranking_item_puntos").html(item["goles"]);
 				
 				ranging_a.append(createDiv("", "indepth_ranking_info",""));
-				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_marca">'+item['marca']+'</div>');
-				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_zapato">'+item['nombre']+'</div>');
-				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_precio">'+item['precio']+'</div>');
+				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_marca">'+tenis_x[tenis_id]['marca']+'</div>');
+				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_zapato">'+tenis_x[tenis_id]['nombre']+'</div>');
+				ranging_a.find(".indepth_ranking_info").append('<div class="indepth_ranking_info_precio">'+tenis_x[tenis_id]['precio']+'</div>');
 				
 				
 				if(item['link']==""){
