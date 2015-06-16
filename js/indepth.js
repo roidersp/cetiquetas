@@ -65,11 +65,20 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 		var m_goleador=goleadores[0];
 		
 		var cont=$(".indepth_goleadores_info");
-		console.log(cont);
+		
+		var m_equipo;
+				$.each(equipos["equipos"], function(index, obj){
+					if(index == normalize(m_goleador["pais"]).toLowerCase()){
+						m_equipo = obj;
+					}
+				});
 				
 		cont.find(".indepth_goleadores_nombre").html(m_goleador["nombre"]);
 		cont.find(".indepth_goleadores_pais").html(m_goleador["pais"]);
 		cont.find(".indepth_goleadores_goles").html(m_goleador["goles"]+" goles");
+		
+		cont.find("#indepth_goleadores_local").attr('href',m_equipo["jersey_url"]["local"]);
+		cont.find("#indepth_goleadores_visitante").attr('href',m_equipo["jersey_url"]["visitante"]);
 		
 		cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Casa/'+normalize(m_goleador["pais"]).replace(/\s/g,"_")+'.jpg">');
 				cont.find("#indepth_goleadores_visitante .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Visita/'+normalize(m_goleador["pais"]).replace(/\s/g,"_")+'.jpg">');
