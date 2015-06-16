@@ -1,259 +1,470 @@
 {
-  "equipos": [
-    {
-      "nombre": "Chile",
-      "jersey_url": {
-        "local": "",
-        "visitante": ""
-      },
-      "jugadores": [
-        {
-          "nombre": "Alexis",
-          "apellido": "Sánchez",
-          "goles": "0",
-          "tenis": "0"
-        },
-        {
-          "nombre": "Eduardo",
-          "apellido": "Vargas",
-          "goles": "0",
-          "tenis": "0"
-        },
-        {
-          "nombre": "Arturo",
-          "apellido": "Vidal",
-          "goles": "0",
-          "tenis": "0"
-        },
-        {
-          "nombre": "Matías",
-          "apellido": "Fernández",
-          "goles": "0",
-          "tenis": "1"
-        }
-      ]
+  "equipos":
+	  {
+		"chile":{
+	      "nombre": "Chile",
+	      "puntos":3,
+	      "jersey_url": {
+	        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+	        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+	      },
+	      "jugadores": [
+	        {
+	          "nombre": "Alexis",
+	          "apellido": "Sánchez",
+	         "tenis": [
+	            {
+	              "id": "0",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Eduardo",
+	          "apellido": "Vargas",
+	         "tenis": [
+	            {
+	              "id": "0",
+	              "goles": "1"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Arturo",
+	          "apellido": "Vidal",
+	         "tenis": [
+	            {
+	              "id": "0",
+	              "goles": "1"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Matías",
+	          "apellido": "Fernández",
+	         "tenis": [
+	            {
+	              "id": "1",
+	              "goles": "0"
+	            }
+	          ]
+	        }
+	      ]
     },
-    {
-      "nombre": "Ecuador",
-      "jersey_url": {
-        "local": "",
-        "visitante": ""
-      },
-      "jugadores": [
-        {
-          "nombre": "Enner",
-          "apellido": "Valencia",
-          "goles": "0",
-          "tenis": "11"
-        },
-        {
-          "nombre": "Fidel",
-          "apellido": "Martínez",
-          "goles": "0",
-          "tenis": "0"
-        },
-        {
-          "nombre": "Miler",
-          "apellido": "Bolaños",
-          "goles": "0",
-          "tenis": "2"
-        },
-        {
-          "nombre": "Jaime",
-          "apellido": "Ayoví",
-          "goles": "0",
-          "tenis": "0"
-        },
-        {
-          "nombre": "Jefferson",
-          "apellido": "Montero",
-          "goles": "0",
-          "tenis": "9"
-        }
-      ]
+	    "ecuador":{
+	      "nombre": "Ecuador",
+	       "puntos":0,
+	      "jersey_url": {
+	        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+	        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+	      },
+	      "jugadores": [
+	        {
+	          "nombre": "Enner",
+	          "apellido": "Valencia",
+	         "tenis": [
+	            {
+	              "id": "11",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Fidel",
+	          "apellido": "Martínez",
+	         "tenis": [
+	            {
+	              "id": "0",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Miler",
+	          "apellido": "Bolaños",
+	         "tenis": [
+	            {
+	              "id": "2",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Jaime",
+	          "apellido": "Ayoví",
+	         "tenis": [
+	            {
+	              "id": "0",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Jefferson",
+	          "apellido": "Montero",
+	         "tenis": [
+	            {
+	              "id": "9",
+	              "goles": "0"
+	            }
+	          ]
+	        }
+	      ]
     },
-    {
-      "nombre": "México",
-      "jersey_url": {
-        "local": "",
-        "visitante": ""
-      },
-      "jugadores": [
-        {
-          "nombre": "Eduardo",
-          "apellido": "Herrera",
-          "goles": "0",
-          "tenis": "3"
-        },
-        {
-          "nombre": "Raúl",
-          "apellido": "Jiménez",
-          "goles": "0",
-          "tenis": "3"
-        },
-        {
-          "nombre": "Rafael",
-          "apellido": "Márquez",
-          "goles": "0",
-          "tenis": "4"
-        },
-        {
-          "nombre": "Enrique",
-          "apellido": "Esqueda",
-          "goles": "0",
-          "tenis": "0"
-        },
-        {
-          "nombre": "Jesús",
-          "apellido": "Corona",
-          "goles": "0",
-          "tenis": "7"
-        }
-      ]
+	    "mexico":{
+	      "nombre": "México",
+	       "puntos":0,
+	      "jersey_url": {
+	        "local": "http://www.innovasport.com/iniciativa/mexico-fmf?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+	        "visitante": "http://www.innovasport.com/iniciativa/mexico-fmf?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+	      },
+	      "jugadores": [
+	        {
+	          "nombre": "Eduardo",
+	          "apellido": "Herrera",
+	         "tenis": [
+	            {
+	              "id": "3",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Raúl",
+	          "apellido": "Jiménez",
+	         "tenis": [
+	            {
+	              "id": "3",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Rafael",
+	          "apellido": "Márquez",
+	         "tenis": [
+	            {
+	              "id": "4",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Enrique",
+	          "apellido": "Esqueda",
+	         "tenis": [
+	            {
+	              "id": "0",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Jesús",
+	          "apellido": "Corona",
+	         "tenis": [
+	            {
+	              "id": "7",
+	              "goles": "0"
+	            }
+	          ]
+	        }
+	      ]
+	    
     },
-    {
-      "nombre": "Argentina",
-      "jersey_url": {
-        "local": "",
-        "visitante": ""
-      },
-      "jugadores": [
-        {
-          "nombre": "Sergio",
-          "apellido": "Agüero",
-          "goles": "0",
-          "tenis": "5"
-        },
-        {
-          "nombre": "Lionel",
-          "apellido": "Messi",
-          "goles": "0",
-          "tenis": "6"
-        },
-        {
-          "nombre": "Carlos",
-          "apellido": "Tévez",
-          "goles": "0",
-          "tenis": "2"
-        },
-        {
-          "nombre": "Gonzalo",
-          "apellido": "Higuaín",
-          "goles": "0",
-          "tenis": "8"
-        },
-        {
-          "nombre": "Ángel",
-          "apellido": "di María",
-          "goles": "0",
-          "tenis": "9"
-        },
-        {
-          "nombre": "Ezequiel",
-          "apellido": "Lavezzi",
-          "goles": "0",
-          "tenis": "9"
-        }
-      ]
+	    "argentina":{
+	      "nombre": "Argentina",
+	       "puntos":1,
+	      "jersey_url": {
+	        "local": "http://www.innovasport.com/iniciativa/argentina?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+	        "visitante": "http://www.innovasport.com/iniciativa/argentina?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+	      },
+	      "jugadores": [
+	        {
+	          "nombre": "Sergio",
+	          "apellido": "Agüero",
+	         "tenis": [
+	            {
+	              "id": "5",
+	              "goles": "1"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Lionel",
+	          "apellido": "Messi",
+	         "tenis": [
+	            {
+	              "id": "6",
+	              "goles": "1"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Carlos",
+	          "apellido": "Tévez",
+	         "tenis": [
+	            {
+	              "id": "2",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Gonzalo",
+	          "apellido": "Higuaín",
+	         "tenis": [
+	            {
+	              "id": "8",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Ángel",
+	          "apellido": "di María",
+	         "tenis": [
+	            {
+	              "id": "9",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Ezequiel",
+	          "apellido": "Lavezzi",
+	         "tenis": [
+	            {
+	              "id": "9",
+	              "goles": "0"
+	            }
+	          ]
+	        }
+	      ]
+	     
     },
-    {
-      "nombre": "Uruguay",
-      "jersey_url": {
-        "local": "",
-        "visitante": ""
-      },
-      "jugadores": [
-        {
-          "nombre": "Edinson",
-          "apellido": "Cavani",
-          "goles": "0",
-          "tenis": "3"
-        },
-        {
-          "nombre": "Diego",
-          "apellido": "Godín",
-          "goles": "0",
-          "tenis": "10"
-        },
-        {
-          "nombre": "Diego",
-          "apellido": "Rolán",
-          "goles": "0",
-          "tenis": "11"
-        }
-      ]
+	   "uruguay":{ 
+	      "nombre": "Uruguay",
+	       "puntos":3,
+	      "jersey_url": {
+	        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+	        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+	      },
+	      "jugadores": [
+	        {
+	          "nombre": "Edinson",
+	          "apellido": "Cavani",
+	         "tenis": [
+	            {
+	              "id": "3",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Diego",
+	          "apellido": "Godín",
+	         "tenis": [
+	            {
+	              "id": "10",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Diego",
+	          "apellido": "Rolán",
+	         "tenis": [
+	            {
+	              "id": "11",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Cristian",
+	          "apellido": "Rodríguez",
+	         "tenis": [
+	            {
+	              "id": "12",
+	              "goles": "1"
+	            }
+	          ]
+	        }
+	      ]
+	    
     },
-    {
-      "nombre": "Paraguay",
-      "jersey_url": {
-        "local": "",
-        "visitante": ""
-      },
-      "jugadores": [
-        {
-          "nombre": "Óscar",
-          "apellido": "Cardozo",
-          "goles": "0",
-          "tenis": "10"
-        },
-        {
-          "nombre": "Roque",
-          "apellido": "Santa Cruz",
-          "goles": "0",
-          "tenis": "10"
-        },
-        {
-          "nombre": "Édgar",
-          "apellido": "Benítez",
-          "goles": "0",
-          "tenis": "13"
-        },
-        {
-          "nombre": "Lucas",
-          "apellido": "Barrios",
-          "goles": "0",
-          "tenis": "12"
-        }
-      ]
+	    "paraguay":{
+	      "nombre": "Paraguay",
+	      "puntos":1,
+	      "jersey_url": {
+	        "local": "http://www.innovasport.com/iniciativa/paraguay?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+	        "visitante": "http://www.innovasport.com/iniciativa/paraguay?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+	      },
+	      "jugadores": [
+	        {
+	          "nombre": "Óscar",
+	          "apellido": "Cardozo",
+	         "tenis": [
+	            {
+	              "id": "10",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Roque",
+	          "apellido": "Santa Cruz",
+	         "tenis": [
+	            {
+	              "id": "10",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Édgar",
+	          "apellido": "Benítez",
+	         "tenis": [
+	            {
+	              "id": "13",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Lucas",
+	          "apellido": "Barrios",
+	         "tenis": [
+	            {
+	              "id": "12",
+	              "goles": "1"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Nelson",
+	          "apellido": "Haedo",
+	         "tenis": [
+	            {
+	              "id": "16",
+	              "goles": "1"
+	            }
+	          ]
+	        }
+	      ]
+	    
     },
-    {
-      "nombre": "Brasil",
-      "jersey_url": {
-        "local": "",
-        "visitante": ""
-      },
-      "jugadores": [
-        {
-          "nombre": "Neymar",
-          "apellido": "",
-          "goles": "0",
-          "tenis": "3"
-        },
-        {
-          "nombre": "David",
-          "apellido": "Luiz",
-          "goles": "0",
-          "tenis": "4"
-        },
-        {
-          "nombre": "Coutinho",
-          "apellido": "",
-          "goles": "0",
-          "tenis": "12"
-        },
-        {
-          "nombre": "Robihno",
-          "apellido": "",
-          "goles": "0",
-          "tenis": "3"
-        },
-        {
-          "nombre": "Robihno",
-          "apellido": "",
-          "goles": "0",
-          "tenis": "3"
-        }
-      ]
+	    "brasil":{
+	      "nombre": "Brasil",
+	      "puntos":3,
+	      "jersey_url": {
+	        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+	        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+	      },
+	      "jugadores": [
+	        {
+	          "nombre": "Neymar",
+	          "apellido": "",
+	         "tenis": [
+	            {
+	              "id": "3",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "David",
+	          "apellido": "Luiz",
+	         "tenis": [
+	            {
+	              "id": "4",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Coutinho",
+	          "apellido": "",
+	         "tenis": [
+	            {
+	              "id": "12",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Robihno",
+	          "apellido": "",
+	         "tenis": [
+	            {
+	              "id": "3",
+	              "goles": "0"
+	            }
+	          ]
+	        },
+	        {
+	          "nombre": "Douglas",
+	          "apellido": "Costa",
+	         "tenis": [
+	            {
+	              "id": "4",
+	              "goles": "1"
+	            }
+	          ]
+	        }
+	      ]
+	    
+    },
+	    "colombia":{
+		     "nombre": "Colombia",
+		     "puntos":0,
+		      "jersey_url": {
+		        "local": "http://www.innovasport.com/iniciativa/colombia?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+		        "visitante": "http://www.innovasport.com/iniciativa/colombia?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+		      },
+		      "jugadores": []
+    },
+	    "venezuela":{
+		     "nombre": "Venezuela",
+		     "puntos":0,
+		      "jersey_url": {
+		        "local": "http://www.innovasport.com/iniciativa/venezuela?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+		        "visitante": "http://www.innovasport.com/iniciativa/Venezuela?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+		      },
+		      "jugadores": [
+			      {
+		          "nombre": "Salomón",
+		          "apellido": "Rondón",
+		         "tenis": [
+		            {
+		              "id": "3",
+		              "goles": "1"
+		            }
+		          ]
+		        }
+		      ]
     }
-  ]
+    ,
+	    "peru":{
+		     "nombre": "Perú",
+		     "puntos":0,
+		      "jersey_url": {
+		        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+		        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+		      },
+		      "jugadores": [
+			      {
+		          "nombre": "Christian",
+		          "apellido": "Cueva",
+		         "tenis": [
+		            {
+		              "id": "3",
+		              "goles": "1"
+		            }
+		          ]
+		        }
+		      ]
+    }
+  }
 }
