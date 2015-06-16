@@ -6,6 +6,8 @@ var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
 var tenis_puntos=["0","0","0","2","1","1","1","0","0","0","0","0","0","0","3","1","2","4","0","2"];
+var marcas_puntos=new Array();
+var goleadores=new Array();
 
 $(".indepth_detalle_bar").on("click",function(){
 	$(this).addClass("open");
@@ -18,7 +20,11 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 	$.getJSON( urlIndepth+"js/tenis.json", function( tenis ) {
 		
 		
-		
+		$.each(equipos["equipos"], function( i, equipo ) {
+			$.each(equipo["jugadores"], function( i, jugador ) {
+				console.log(jugador);
+			});
+		});
 		
 		
 		if($(".indepth_goleadores_item").attr("href")=="#"){
