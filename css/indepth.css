@@ -350,6 +350,10 @@
 	opacity: 1;
 }
 
+.indepth_gol_img.active{
+	opacity: 1;
+}
+
 .indepth_gol_img:first-child{
 	margin-left: 15px;
 } 
@@ -573,6 +577,10 @@
 
 .indepth_detalle_side.marca.marathon{
 	background-image: url(../images/Marcas-Desglose/Marathon.png);
+}
+
+.indepth_detalle_side.marca.prima{
+	background-image: url(../images/Marcas-Desglose/Pirma.png);
 }
 
 .indepth_detalle_side.marca.romai{
@@ -905,6 +913,8 @@ a .indepth_balon{
 	.indepth_gol_img{
 		margin: 0 15px;
 	}
+	
+	
 	
 	.indepth_goleadores_info_side.izq{
 		width: auto;

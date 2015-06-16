@@ -36,6 +36,10 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 		}
 		
 		$(".indepth_gol_img").hover(function(){
+			
+			
+				$(".indepth_gol_img").removeClass("active");
+				$(this).addClass("active");
 				var cont=$(".indepth_goleadores_info");
 				var data=$(this);
 				cont.find(".indepth_goleadores_nombre").html(data.attr("nombre"));
@@ -127,6 +131,7 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				
 				var tenis_id=item["id"];
 				var tenis_goles=item["goles"];				
+
 				
 				ranking.append('<a target="_blank" class="indepth_ranking_item" href="'+tenis_x[tenis_id]["link"]+'">');
 				
