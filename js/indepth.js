@@ -6,6 +6,7 @@ var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
 var tenis_puntos=["0","0","0","2","1","1","1","0","0","0","0","0","0","0","3","1","2","4","0","2"];
+var tenis_valores= new Array();
 var marcas_puntos=new Array();
 var goleadores=new Array();
 
@@ -18,6 +19,10 @@ $(".indepth_detalle_bar").on("click",function(){
 $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 	
 	$.getJSON( urlIndepth+"js/tenis.json", function( tenis ) {
+		
+	$.each(tenis["tenis"], function( i, item ) {
+		tenis["tenis"][i]["puntos"]=0;
+	})
 		
 		
 		$.each(equipos["equipos"], function( i, equipo ) {
@@ -33,6 +38,21 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				jugador_item["goles"]=goles_jugador;
 				jugador_item["tenis"]=jugador["tenis"][0]["id"];
 				jugador_item["pais"]=pais;
+				
+				puntos_t=0;
+				
+				
+				
+				if (typeof tenis["tenis"][jugador["tenis"][0]["id"]]["puntos"] == 'undefined') {
+					puntos_t=0;
+				}else{
+					puntos_t=tenis["tenis"][jugador["tenis"][0]["id"]]["puntos"];
+				}
+				 
+				tenis["tenis"][jugador["tenis"][0]["id"]]["puntos"]=puntos_t+goles_jugador;
+				
+				console.log(tenis["tenis"][jugador["tenis"][0]["id"]]);
+				
 				
 				if(goleadores.length==0){
 						goleadores.push(jugador_item);
@@ -152,33 +172,33 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 			var ranking=$("#indepth_ranking_cont");
 			
 			
-			
 			var tenis_orden=[];
 			
-			$.each(tenis_puntos, function( i, item ) {
-				
+			$.each(tenis["tenis"], function( i, item ) {
+			
 				var tenis_h = new Array();
-				tenis_h["goles"]=item;
+				tenis_h["goles"]=item["puntos"];
 				tenis_h["id"]=i;
 				
+				console.log(tenis_h);
 				
-				
+								
 				if(tenis_orden.length==0){
 						tenis_orden.push(tenis_h);
 					}else{
-						if(parseInt(tenis_orden[0]['goles'])<=item){
+						if(parseInt(tenis_orden[0]['goles'])<=item["puntos"]){
 							tenis_orden.unshift(tenis_h);
-							
+							console.log("1")
 						}else{
 							var min_l=tenis_orden[tenis_orden.length-1]['goles'];
-								if(parseInt(min_l)>=parseInt(item)){
+								if(parseInt(min_l)>=parseInt(item["puntos"])){
 									tenis_orden.push(tenis_h);
 									
 								}else{
 									$.each(tenis_orden, function( k, tenis_j ) {
 										min2=parseInt(tenis_j['goles']);
 										
-										if(min2<=item){
+										if(min2<=item["puntos"]){
 											tenis_orden.splice(k, 0,tenis_h);
 											return false;
 										};
@@ -188,6 +208,7 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 					}
 			});
 			
+			console.log(tenis_orden);
 			
 			
 			tenis_x=tenis["tenis"];
