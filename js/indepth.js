@@ -21,10 +21,72 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 		
 		
 		$.each(equipos["equipos"], function( i, equipo ) {
+			var pais=equipo["nombre"];
+			
 			$.each(equipo["jugadores"], function( i, jugador ) {
-				console.log(jugador);
+				var jugador_item=new Array(); 
+				var goles_jugador=0;
+				$.each(jugador["tenis"], function( i, tenis ) {
+					goles_jugador=goles_jugador+parseInt(tenis["goles"]);
+				});
+				jugador_item["nombre"]=jugador["nombre"]+' '+jugador["apellido"];
+				jugador_item["goles"]=goles_jugador;
+				jugador_item["tenis"]=jugador["tenis"][0]["id"];
+				jugador_item["pais"]=pais;
+				
+				if(goleadores.length==0){
+						goleadores.push(jugador_item);
+					}else{
+						if(parseInt(goleadores[0]['goles'])<=goles_jugador){
+							goleadores.unshift(jugador_item);
+							
+						}else{
+							var min_l=goleadores[goleadores.length-1]['goles'];
+								if(parseInt(min_l)>=parseInt(goles_jugador)){
+									goleadores.push(jugador_item);
+									
+								}else{
+									$.each(goleadores, function( k, tenis_j ) {
+										min2=parseInt(tenis_j['goles']);
+										
+										if(min2<=goles_jugador){
+											goleadores.splice(k, 0,jugador_item);
+											return false;
+										};
+									});
+								}
+						}
+					}
+				
+				
 			});
 		});
+		var tenis_b=tenis["tenis"][goleadores[0]["tenis"]];
+		var m_goleador=goleadores[0];
+		
+		var cont=$(".indepth_goleadores_info");
+		console.log(cont);
+				
+		cont.find(".indepth_goleadores_nombre").html(m_goleador["nombre"]);
+		cont.find(".indepth_goleadores_pais").html(m_goleador["pais"]);
+		cont.find(".indepth_goleadores_goles").html(m_goleador["goles"]+" goles");
+		
+		cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Casa/'+normalize(m_goleador["pais"]).replace(/\s/g,"_")+'.jpg">');
+				cont.find("#indepth_goleadores_visitante .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Visita/'+normalize(m_goleador["pais"]).replace(/\s/g,"_")+'.jpg">');
+		
+		cont.find(".indepth_goleadores_tenis").html(tenis_b["marca"]+" - "+tenis_b["nombre"]);
+		$("#indepth_goleadores_tenis").attr("href",tenis_b["link"]);
+		$("#indepth_goleadores_tenis img").attr("src",urlIndepth+'images/Zapatos/'+tenis_b["marca"]+'/'+normalize(tenis_b["nombre"]).replace(/\s/g,"_")+'.jpg');
+		$(".indepth_goleadores_info_side .indepth_goleadores_nombre").html(goleadores["nombre"]);
+		
+		for(i=0;i<5;i++){
+			$(".indepth_goleadores_container").append('<img class="indepth_gol_img" src="images/Goleadores/'+normalize(goleadores[i]["pais"]).replace(/\s/g,"_")+'/'+normalize(goleadores[i]["nombre"]).replace(/\s/g,"_")+'.png" nombre="'+goleadores[i]["nombre"]+'" pais="'+goleadores[i]["pais"]+'" goles="'+goleadores[i]["goles"]+'" tenis="'+goleadores[i]["tenis"]+'">')
+		}
+		
+		$(".indepth_gol_img:first-child").addClass("active");
+		
+	
+		
 		
 		
 		if($(".indepth_goleadores_item").attr("href")=="#"){
@@ -36,8 +98,6 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 		}
 		
 		$(".indepth_gol_img").hover(function(){
-			
-			
 				$(".indepth_gol_img").removeClass("active");
 				$(this).addClass("active");
 				var cont=$(".indepth_goleadores_info");
@@ -56,8 +116,8 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				
 				cont.find(".indepth_goleadores_tenis").html(m_tenis["marca"]+" - "+m_tenis["nombre"]);
 				
-				cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Casa/'+normalize(data.attr("pais"))+'.jpg">');
-				cont.find("#indepth_goleadores_visitante .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Visita/'+normalize(data.attr("pais"))+'.jpg">');
+				cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Casa/'+normalize(data.attr("pais")).replace(/\s/g,"_")+'.jpg">');
+				cont.find("#indepth_goleadores_visitante .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Visita/'+normalize(data.attr("pais")).replace(/\s/g,"_")+'.jpg">');
 				
 				cont.find("#indepth_goleadores_tenis .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Zapatos/'+m_tenis["marca"]+'/'+normalize(m_tenis["nombre"]).replace(/\s/g,"_")+'.jpg">');
 				

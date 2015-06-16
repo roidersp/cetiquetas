@@ -34,8 +34,8 @@
 	          "apellido": "Vidal",
 	         "tenis": [
 	            {
-	              "id": "0",
-	              "goles": "1"
+	              "id": "17",
+	              "goles": "2"
 	            }
 	          ]
 	        },
@@ -166,6 +166,17 @@
 	            {
 	              "id": "7",
 	              "goles": "0"
+	            }
+	          ]
+	        }
+	        ,
+	        {
+	          "nombre": "Matias",
+	          "apellido": "Vuoso",
+	         "tenis": [
+	            {
+	              "id": "19",
+	              "goles": "2"
 	            }
 	          ]
 	        }
