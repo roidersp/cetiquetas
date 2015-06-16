@@ -5,7 +5,7 @@ var disqus_url="test";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
-var tenis_puntos=["0","0","0","2","1","1","1","0","0","0","0","0","0","0","2","1","0","2","0","0"];
+var tenis_puntos=["0","0","0","2","1","1","1","0","0","0","0","0","0","0","3","1","2","4","0","2"];
 
 $(".indepth_detalle_bar").on("click",function(){
 	$(this).addClass("open");
@@ -44,10 +44,13 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				var m_tenis=tenis["tenis"][data.attr("tenis")];
 				var m_equipo;
 				$.each(equipos["equipos"], function(index, obj){
-					if(obj.nombre == data.attr("pais")){
+					console.log(obj);
+					if(index == normalize(data.attr("pais")).toLowerCase()){
 						m_equipo = obj;
 					}
 				});
+				
+				console.log(normalize(data.attr("pais")));
 				cont.find(".indepth_goleadores_tenis").html(m_tenis["marca"]+" - "+m_tenis["nombre"]);
 				
 				cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Casa/'+normalize(data.attr("pais"))+'.jpg">');

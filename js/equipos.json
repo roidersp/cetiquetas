@@ -429,8 +429,8 @@
 		     "nombre": "Venezuela",
 		     "puntos":0,
 		      "jersey_url": {
-		        "local": "http://www.innovasport.com/iniciativa/colombia?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
-		        "visitante": "http://www.innovasport.com/iniciativa/colombia?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+		        "local": "http://www.innovasport.com/iniciativa/venezuela?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+		        "visitante": "http://www.innovasport.com/iniciativa/Venezuela?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
 		      },
 		      "jugadores": [
 			      {
@@ -450,8 +450,8 @@
 		     "nombre": "Perú",
 		     "puntos":0,
 		      "jersey_url": {
-		        "local": "http://www.innovasport.com/iniciativa/colombia?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
-		        "visitante": "http://www.innovasport.com/iniciativa/colombia?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
+		        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
+		        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
 		      },
 		      "jugadores": [
 			      {
