@@ -14,11 +14,9 @@ $(".indepth_detalle_bar").on("click",function(){
 )
 
 $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
-	console.log(equipos);
 	
 	$.getJSON( urlIndepth+"js/tenis.json", function( tenis ) {
 		
-		console.log(equipos);
 		
 		
 		
@@ -35,6 +33,10 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 		}
 		
 		$(".indepth_gol_img").hover(function(){
+			
+			
+				$(".indepth_gol_img").removeClass("active");
+				$(this).addClass("active");
 				var cont=$(".indepth_goleadores_info");
 				var data=$(this);
 				cont.find(".indepth_goleadores_nombre").html(data.attr("nombre"));
@@ -44,13 +46,11 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				var m_tenis=tenis["tenis"][data.attr("tenis")];
 				var m_equipo;
 				$.each(equipos["equipos"], function(index, obj){
-					console.log(obj);
 					if(index == normalize(data.attr("pais")).toLowerCase()){
 						m_equipo = obj;
 					}
 				});
 				
-				console.log(normalize(data.attr("pais")));
 				cont.find(".indepth_goleadores_tenis").html(m_tenis["marca"]+" - "+m_tenis["nombre"]);
 				
 				cont.find("#indepth_goleadores_local .indepth_goleadores_img_item").html('<img src="'+urlIndepth+'images/Camisetas/Casa/'+normalize(data.attr("pais"))+'.jpg">');
@@ -126,14 +126,10 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 			
 			$.each(tenis_orden, function( i, item ) {
 				
-				//console.log(tenis_orden[item["id"]]);
-				console.log(item);
 				var tenis_id=item["id"];
 				var tenis_goles=item["goles"];
 				
-				console.log(tenis_id);
 				
-				console.log(tenis_x[tenis_id]);
 				
 				ranking.append('<a target="_blank" class="indepth_ranking_item" href="'+tenis_x[tenis_id]["link"]+'">');
 				
