@@ -7,6 +7,11 @@ var disqus_per_page=3;
 var tamaño_total=1920;
 var tenis_puntos=["0","0","0","2","1","1","1","0","0","0","0","0","0","0","3","1","2","4","0","2"];
 
+
+var num_random=Math.floor(Math.random() * 4) + 1;
+
+$("#indepth_cover").addClass("ra"+num_random);
+
 $(".indepth_detalle_bar").on("click",function(){
 	$(this).addClass("open");
 	$(this).parent().find(".indepth_detalle_info").toggle();
@@ -22,14 +27,9 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 		
 		if($(".indepth_goleadores_item").attr("href")=="#"){
 			$(".indepth_goleadores_item .indepth_loquiero").css("display","none");
-		$(".indepth_goleadores_item").bind('click', function(e){
-			
-				
-				
-				e.preventDefault();
-			
-					        
-		});
+			$(".indepth_goleadores_item").bind('click', function(e){
+					e.preventDefault();		        
+			});
 		}
 		
 		$(".indepth_gol_img").hover(function(){
@@ -66,21 +66,15 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 					$(".indepth_goleadores_item").bind('click', function(e){
 					        e.preventDefault();
 					});
-					
-
 				}else{
 					cont.find(".indepth_loquiero").css("display","block");
 					$(".indepth_goleadores_item").unbind('click');
 					 
-				}
-				 
-				
+				}				
 			});
 			
 			var ranking=$("#indepth_ranking_cont");
-			
-			
-			
+
 			var tenis_orden=[];
 			
 			$.each(tenis_puntos, function( i, item ) {
@@ -88,9 +82,7 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				var tenis_h = new Array();
 				tenis_h["goles"]=item;
 				tenis_h["id"]=i;
-				
-				
-				
+
 				if(tenis_orden.length==0){
 						tenis_orden.push(tenis_h);
 					}else{

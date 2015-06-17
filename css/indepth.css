@@ -167,11 +167,44 @@
 
 
  
+
+
+#indepth_cover.ra1 .indepth_parallax_back{
+	background: url(../images/portadas/Chile_Brasil.jpg);	background-size: auto 100%;
+	background-position: center center;
+	background-attachment: fixed;	
+	background-repeat: no-repeat;
+}
+
+#indepth_cover.ra2 .indepth_parallax_back{
+	background: url(../images/portadas/Colombia_Brasil.jpg);
+	background-size: auto 100%;
+	background-position: center center;
+	background-attachment: fixed;	
+	background-repeat: no-repeat;	
+}
+
+#indepth_cover.ra3 .indepth_parallax_back{
+	background: url(../images/portadas/Mexico_Ecuador.jpg);	background-size: auto 100%;
+	background-position: center center;
+	background-attachment: fixed;	
+	background-repeat: no-repeat;
+}
+
+#indepth_cover.ra4 .indepth_parallax_back{
+	background: url(../images/portadas/Uruguay_Argentina.jpg);
+	background-size: auto 100%;
+	background-position: center center;
+	background-attachment: fixed;	
+	background-repeat: no-repeat;
+}
+
 #indepth_cover .indepth_parallax_back{
 	background: url(../images/Portada.jpg);
 	background-size: auto 100%;
 	background-position: center center;
 	background-attachment: fixed;	
+	background-repeat: no-repeat;
 }
 
 .indepth_page_content .indepth_page_body{
@@ -1202,6 +1235,23 @@ a .indepth_balon{
 		background-size: cover;
 		background-position: center center;
 		background-attachment: inherit;	
+	}
+	
+	#indepth_cover.ra1 .indepth_parallax_back{
+		background: url(../images/portadas/Chile_Brasil_m.jpg);	
+	}
+	
+	#indepth_cover.ra2 .indepth_parallax_back{
+		background: url(../images/portadas/Colombia_Brasil_m.jpg);	
+	}
+	
+	#indepth_cover.ra3 .indepth_parallax_back{
+		background: url(../images/portadas/Mexico_Ecuador_m.jpg);	
+	}
+	
+	#indepth_cover.ra4 .indepth_parallax_back{
+		background: url(../images/portadas/Uruguay_Argentina_m.jpg);
+		
 	}
 
 }
