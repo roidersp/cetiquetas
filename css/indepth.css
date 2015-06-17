@@ -559,31 +559,35 @@
 	background-repeat: no-repeat;
 }
 
-.indepth_detalle_side.marca.nike{
+.nike .indepth_detalle_side.marca{
 	background-image: url(../images/Marcas-Desglose/Nike.png);
 }
 
-.indepth_detalle_side.marca.puma{
+.puma .indepth_detalle_side.marca{
 	background-image: url(../images/Marcas-Desglose/Puma.png);
 }
 
-.indepth_detalle_side.marca.umbro{
+.umbro .indepth_detalle_side.marca{
 	background-image: url(../images/Marcas-Desglose/Umbro.png);
 }
 
-.indepth_detalle_side.marca.adidas{
+.adidas .indepth_detalle_side.marca{
 	background-image: url(../images/Marcas-Desglose/Adidas.png);
 }
 
-.indepth_detalle_side.marca.marathon{
+.marathon .indepth_detalle_side.marca{
 	background-image: url(../images/Marcas-Desglose/Marathon.png);
 }
 
-.indepth_detalle_side.marca.prima{
+.under_armour .indepth_detalle_side.marca{
+	background-image: url(../images/Marcas-Desglose/Under_Armour.png);
+}
+
+.pirma .indepth_detalle_side.marca{
 	background-image: url(../images/Marcas-Desglose/Pirma.png);
 }
 
-.indepth_detalle_side.marca.romai{
+.romai .indepth_detalle_side.marca{
 	background-image: url(../images/Marcas-Desglose/Romai.png);
 }
 

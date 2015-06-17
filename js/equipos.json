@@ -4,6 +4,7 @@
 		"chile":{
 	      "nombre": "Chile",
 	      "puntos":3,
+	      "marca":"Puma",
 	      "jersey_url": {
 	        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 	        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
@@ -54,6 +55,7 @@
 	    "ecuador":{
 	      "nombre": "Ecuador",
 	       "puntos":0,
+	      "marca":"Marathon",
 	      "jersey_url": {
 	        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 	        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
@@ -113,7 +115,8 @@
     },
 	    "mexico":{
 	      "nombre": "México",
-	       "puntos":0,
+	       "puntos":2,
+	      "marca":"Adidas",
 	      "jersey_url": {
 	        "local": "http://www.innovasport.com/iniciativa/mexico-fmf?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 	        "visitante": "http://www.innovasport.com/iniciativa/mexico-fmf?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
@@ -185,7 +188,8 @@
     },
 	    "argentina":{
 	      "nombre": "Argentina",
-	       "puntos":1,
+	       "puntos":4,
+	      "marca":"Adidas",
 	      "jersey_url": {
 	        "local": "http://www.innovasport.com/iniciativa/argentina?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 	        "visitante": "http://www.innovasport.com/iniciativa/argentina?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
@@ -257,6 +261,7 @@
 	   "uruguay":{ 
 	      "nombre": "Uruguay",
 	       "puntos":3,
+	      "marca":"Puma",
 	      "jersey_url": {
 	        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 	        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
@@ -308,6 +313,7 @@
 	    "paraguay":{
 	      "nombre": "Paraguay",
 	      "puntos":1,
+	      "marca":"Adidas",
 	      "jersey_url": {
 	        "local": "http://www.innovasport.com/iniciativa/paraguay?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 	        "visitante": "http://www.innovasport.com/iniciativa/paraguay?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
@@ -369,6 +375,7 @@
 	    "brasil":{
 	      "nombre": "Brasil",
 	      "puntos":3,
+	      "marca":"Nike",
 	      "jersey_url": {
 	        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 	        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
@@ -430,7 +437,8 @@
 	    "colombia":{
 		     "nombre": "Colombia",
 		     "puntos":0,
-		      "jersey_url": {
+		      "marca":"Adidas",
+	      "jersey_url": {
 		        "local": "http://www.innovasport.com/iniciativa/colombia?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 		        "visitante": "http://www.innovasport.com/iniciativa/colombia?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
 		      },
@@ -439,7 +447,8 @@
 	    "venezuela":{
 		     "nombre": "Venezuela",
 		     "puntos":0,
-		      "jersey_url": {
+		      "marca":"Adidas",
+	      "jersey_url": {
 		        "local": "http://www.innovasport.com/iniciativa/venezuela?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 		        "visitante": "http://www.innovasport.com/iniciativa/Venezuela?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
 		      },
@@ -460,7 +469,8 @@
 	    "peru":{
 		     "nombre": "Perú",
 		     "puntos":0,
-		      "jersey_url": {
+		      "marca":"Umbro",
+	      "jersey_url": {
 		        "local": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica",
 		        "visitante": "http://www.innovasport.com/hombres/ropa/?sport=261&utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
 		      },
@@ -471,7 +481,7 @@
 		         "tenis": [
 		            {
 		              "id": "3",
-		              "goles": "1"
+		              "goles": "2"
 		            }
 		          ]
 		        }
