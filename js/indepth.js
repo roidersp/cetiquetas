@@ -29,12 +29,10 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 			tenis_marcas[m]["nombre"]=item["marca"];
 			tenis_marcas[m]["equipos"]=new Array();
 			tenis_marcas[m]["tenis"]=new Array();
+			tenis_marcas[m]["tenis"]["jugadores"]=new Array();
 
 	});
-	
-	
-	
-	
+
 		
 		$.each(equipos["equipos"], function( i, equipo ) {
 			var pais=equipo["nombre"];
@@ -48,11 +46,13 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				tenis_marcas[e_marca]["nombre"]=equipo["marca"];
 				tenis_marcas[e_marca]["tenis"]=new Array();
 				tenis_marcas[e_marca]["equipos"]=new Array();
+				tenis_marcas[e_marca]["tenis"]["jugadores"]=new Array();
 			}
 						
 			equipo_to_marca["nombre"]=pais;
 			equipo_to_marca["puntos"]=equipo["puntos"];
 			equipo_to_marca["link"]=equipo["jersey_url"];
+			
 
 			if(tenis_marcas[e_marca]["equipos"].length==0){
 				tenis_marcas[e_marca]["equipos"].push(equipo_to_marca);
@@ -69,13 +69,10 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 							$.each(tenis_marcas[e_marca]["equipos"], function( k, tenis_j ) {
 								min2=parseInt(tenis_j['puntos']);
 								
-								console.log(min2);
-								
 								if(min2<=equipo["puntos"]){
 									tenis_marcas[e_marca]["equipos"].splice(k, 0,equipo_to_marca);
 									return false;
 								}else{
-									console.log("D:");
 								}
 							});
 						}
@@ -85,12 +82,14 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 			
 			
 			
+			
 			$.each(equipo["jugadores"], function( i, jugador ) {
 				var jugador_item=new Array(); 
 				var goles_jugador=0;
 				$.each(jugador["tenis"], function( i, tenis ) {
 					goles_jugador=goles_jugador+parseInt(tenis["goles"]);
 				});
+				
 				jugador_item["nombre"]=jugador["nombre"]+' '+jugador["apellido"];
 				jugador_item["goles"]=goles_jugador;
 				jugador_item["tenis"]=jugador["tenis"][0]["id"];
@@ -106,35 +105,39 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				 
 				tenis["tenis"][jugador["tenis"][0]["id"]]["puntos"]=puntos_t+goles_jugador;
 				
+				
+								
 				var jugadore_tenis= new Array();
 				jugadore_tenis["nombre"]=jugador["nombre"]+' '+jugador["apellido"];
 				jugadore_tenis["img"]='images/Goleadores/'+normalize(pais).replace(/\s/g,"_")+'/'+normalize(jugador["nombre"]+' '+jugador["apellido"]).replace(/\s/g,"_")+'.png';
 				jugadore_tenis["goles"]=goles_jugador;
+					
 					
 
 				if(typeof tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"] == 'undefined'){
 					tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"]=new Array();
 				}
 				
+				
 				if(goles_jugador > 0){
 					//tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"].push(jugadore_tenis);
-					if(tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"].length==0){
-						tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"].push(jugadore_tenis);
+					if(tenis_marcas[e_marca]["tenis"]["jugadores"].length==0){
+						tenis_marcas[e_marca]["tenis"]["jugadores"].push(jugadore_tenis);
 					}else{
-						if(parseInt(tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"][0]['goles'])<=goles_jugador){
-							tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"].unshift(jugadore_tenis);
+						if(parseInt(tenis_marcas[e_marca]["tenis"]["jugadores"][0]['goles'])<=goles_jugador){
+							tenis_marcas[e_marca]["tenis"]["jugadores"].unshift(jugadore_tenis);
 							
 						}else{
-							var min_l=tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"][tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"].length-1]['goles'];
+							var min_l=tenis_marcas[e_marca]["tenis"]["jugadores"][tenis_marcas[e_marca]["tenis"]["jugadores"].length-1]['goles'];
 								if(parseInt(min_l)>=parseInt(goles_jugador)){
-									tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"].push(jugadore_tenis);
+									tenis_marcas[e_marca]["tenis"]["jugadores"].push(jugadore_tenis);
 									
 								}else{
-									$.each(tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"], function( k, tenis_j ) {
+									$.each(tenis_marcas[e_marca]["tenis"]["jugadores"], function( k, tenis_j ) {
 										min2=parseInt(tenis_j['goles']);
 										
 										if(min2<=goles_jugador){
-											tenis["tenis"][jugador["tenis"][0]["id"]]["jugadores"].splice(k, 0,jugadore_tenis);
+											tenis_marcas[e_marca]["tenis"]["jugadores"].splice(k, 0,jugadore_tenis);
 											return false;
 										};
 									});
@@ -142,8 +145,6 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 						}
 					}
 				}
-					
-				
 				
 				if(goleadores.length==0){
 					goleadores.push(jugador_item);
@@ -172,6 +173,10 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				
 			});
 		});
+		
+		console.log(tenis_marcas);
+		console.log(tenis);
+		
 		var tenis_b=tenis["tenis"][goleadores[0]["tenis"]];
 		var m_goleador=goleadores[0];
 		
@@ -267,35 +272,35 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 				tenis_h["id"]=i;
 				var i_marca=normalize(item["marca"]).replace(/\s/g,"_").toLowerCase();
 				
+				//console.log(tenis_h);
+				
 				if(tenis_orden.length==0){
 						tenis_orden.push(tenis_h);
-						tenis_marcas[i_marca]["jugadores"].push(tenis_h);
+						tenis_marcas[i_marca]["tenis"].push(tenis_h);
 					}else{
 						if(parseInt(tenis_orden[0]['goles'])<=item["puntos"]){
 							tenis_orden.unshift(tenis_h);
-							tenis_marcas[i_marca]["jugadores"].unshift(tenis_h);
+							tenis_marcas[i_marca]["tenis"].unshift(tenis_h);
 						}else{
 							var min_l=tenis_orden[tenis_orden.length-1]['goles'];
 								if(parseInt(min_l)>=parseInt(item["puntos"])){
 									tenis_orden.push(tenis_h);
-									tenis_marcas[i_marca]["jugadores"].push(tenis_h);
-									
+									tenis_marcas[i_marca]["tenis"].push(tenis_h);
 								}else{
 									$.each(tenis_orden, function( k, tenis_j ) {
 										min2=parseInt(tenis_j['goles']);
 										
 										if(min2<=item["puntos"]){
 											tenis_orden.splice(k, 0,tenis_h);
-											tenis_marcas[i_marca]["jugadores"].splice(k, 0,tenis_h);
 											return false;
 										};
 									});
 									
-									$.each(tenis_marcas[i_marca]["jugadores"], function( k, tenis_j ) {
+									$.each(tenis_marcas[i_marca]["tenis"], function( k, tenis_j ) {
 										min2=parseInt(tenis_j['goles']);
 										
 										if(min2<=item["puntos"]){
-											tenis_marcas[i_marca]["jugadores"].splice(k, 0,tenis_h);
+											tenis_marcas[i_marca]["tenis"].splice(k, 0,tenis_h);
 											return false;
 										};
 									});
@@ -310,7 +315,6 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 			tenis_x=tenis["tenis"];
 			
 			
-			console.log(tenis);
 			
 			
 			$.each(tenis_orden, function( i, item ) {
@@ -352,7 +356,6 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 			
 				var cont_marcas=$(".indepth_detalle_container_1");
 				
-				console.log(tenis_marcas);
 				
 			var tenis_marcas_order=new Array();
 			
@@ -381,16 +384,9 @@ $.getJSON( urlIndepth+"js/equipos.json", function( equipos ) {
 					puntos_m=puntos_m+item["puntos"];
 				});
 				
-				$.each(marca_m["jugadores"], function( i, item ) {
+				$.each(marca_m["tenis"], function( i, item ) {
 					puntos_m=puntos_m+item["puntos"];
 				});
-				
-			
-				console.log(puntos_m)
-				console.log("----------------------------");
-				
-				
-				
 				
 				
 				/*if(goleadores.length==0){
