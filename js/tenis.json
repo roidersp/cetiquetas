@@ -101,7 +101,7 @@
     {
       "num": "14",
       "marca": "Nike",
-      "nombre": "Mercurial Wolf Grey",
+      "nombre": "Mercurial Vapor Wolf Grey",
       "precio": "$3,699",
       "link": "http://www.innovasport.com/hombres/calzado?manufacturer=353&sport=261&utm_source=Juanfutbol&utm_medium=Rankingtachones&utm_campaign=Copaamerica"
     }
@@ -127,23 +127,16 @@
       "nombre": "Mercurial Superfly Wolf Grey",
       "precio": "$3,699",
       "link": "http://www.innovasport.com/hombres/calzado?manufacturer=353&sport=261&utm_source=Juanfutbol&utm_medium=Rankingtachones&utm_campaign=Copaamerica"
-    } ,
+    },
     {
       "num": "18",
-      "marca": "Nike",
-      "nombre": "Mercurial Vapor Wolf Grey",
-      "precio": "$3,699",
-      "link": "http://www.innovasport.com/hombres/calzado?manufacturer=353&sport=261&utm_source=Juanfutbol&utm_medium=Rankingtachones&utm_campaign=Copaamerica"
-    } ,
-    {
-      "num": "19",
       "marca": "Pirma",
-      "nombre": "Gladiator",
+      "nombre": "Imperio Light Yellow",
       "precio": "$3,699",
       "link": "http://www.innovasport.com/hombres/calzado?sport=261&utm_source=Juanfutbol&utm_medium=Rankingtachones&utm_campaign=Copaamerica"
     },
     {
-      "num": "20",
+      "num": "19",
       "marca": "Nike",
       "nombre": "Magista Obra",
       "precio": "$3,699",
