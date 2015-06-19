@@ -25,7 +25,7 @@
 	          "apellido": "Vargas",
 	         "tenis": [
 	            {
-	              "id": "0",
+	              "id": "17",
 	              "goles": "1"
 	            }
 	          ]
@@ -66,8 +66,8 @@
 	          "apellido": "Valencia",
 	         "tenis": [
 	            {
-	              "id": "11",
-	              "goles": "0"
+	              "id": "12",
+	              "goles": "1"
 	            }
 	          ]
 	        },
@@ -86,8 +86,8 @@
 	          "apellido": "Bolaños",
 	         "tenis": [
 	            {
-	              "id": "2",
-	              "goles": "0"
+	              "id": "17",
+	              "goles": "1"
 	            }
 	          ]
 	        },
@@ -426,7 +426,7 @@
 	          "apellido": "Costa",
 	         "tenis": [
 	            {
-	              "id": "4",
+	              "id": "19",
 	              "goles": "1"
 	            }
 	          ]
@@ -453,9 +453,18 @@
 		        "visitante": "http://www.innovasport.com/iniciativa/Venezuela?utm_source=Juanfutbol&utm_medium=Rankingjerseys&utm_campaign=Copaamerica"
 		      },
 		      "jugadores": [
-			      {
+			     {
 		          "nombre": "Salomón",
 		          "apellido": "Rondón",
+		         "tenis": [
+		            {
+		              "id": "3",
+		              "goles": "1"
+		            }
+		          ]
+		        }, {
+		          "nombre": "Jaison",
+		          "apellido": "Murillo",
 		         "tenis": [
 		            {
 		              "id": "3",
@@ -481,7 +490,17 @@
 		         "tenis": [
 		            {
 		              "id": "3",
-		              "goles": "2"
+		              "goles": "1"
+		            }
+		          ]
+		        },
+		        {
+		          "nombre": "Claudio",
+		          "apellido": "Pizarro",
+		         "tenis": [
+		            {
+		              "id": "9",
+		              "goles": "1"
 		            }
 		          ]
 		        }
