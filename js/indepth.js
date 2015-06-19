@@ -5,7 +5,7 @@ var disqus_url="test";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
-var tenis_puntos=["0","0","0","2","1","1","1","0","0","0","0","0","0","0","3","1","2","4","0","2"];
+var tenis_puntos=["0","0","0","2","1","1","1","0","0","1","0","0","0","0","3","1","2","4","0","2","1"];
 
 
 var num_random=Math.floor(Math.random() * 4) + 1;
