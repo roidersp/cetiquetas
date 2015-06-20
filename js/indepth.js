@@ -8,6 +8,7 @@ var tamaño_total=1920;
 var tenis_puntos=["0","0","0","2","1","1","1","0","0","1","0","0","0","0","3","1","2","4","2","1"];
 
 
+
 var num_random=Math.floor(Math.random() * 4) + 1;
 
 $("#indepth_cover").addClass("ra"+num_random);
