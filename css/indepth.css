@@ -170,7 +170,8 @@
 
 
 #indepth_cover.ra1 .indepth_parallax_back{
-	background: url(../images/portadas/Chile_Brasil.jpg);	background-size: auto 100%;
+	background: url(../images/portadas/Chile_Brasil.jpg);	
+	background-size: auto 100%;
 	background-position: center center;
 	background-attachment: fixed;	
 	background-repeat: no-repeat;
@@ -1238,19 +1239,31 @@ a .indepth_balon{
 	}
 	
 	#indepth_cover.ra1 .indepth_parallax_back{
-		background: url(../images/portadas/Chile_Brasil_m.jpg);	
+		background: url(../images/portadas/Chile_Brasil_m.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-attachment: inherit;	
 	}
 	
 	#indepth_cover.ra2 .indepth_parallax_back{
 		background: url(../images/portadas/Colombia_Brasil_m.jpg);	
+		background-size: cover;
+		background-position: center center;
+		background-attachment: inherit;
 	}
 	
 	#indepth_cover.ra3 .indepth_parallax_back{
 		background: url(../images/portadas/Mexico_Ecuador_m.jpg);	
+		background-size: cover;
+		background-position: center center;
+		background-attachment: inherit;
 	}
 	
 	#indepth_cover.ra4 .indepth_parallax_back{
 		background: url(../images/portadas/Uruguay_Argentina_m.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-attachment: inherit;
 		
 	}
 
